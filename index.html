@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ばかを、ならべる。招待</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, sans-serif;
+      background: #f5f3ef;
+      color: #1a1a18;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: #1a1a18;
+      border: 1px solid #1a1a18;
+      padding: 18px 32px;
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 320px;
+    }
+    .note {
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+      line-height: 1.8;
+      max-width: 280px;
+    }
+    .code {
+      font-family: monospace;
+      font-size: 13px;
+      color: #555;
+      letter-spacing: 0.5px;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <p class="label">ばかを、ならべる。</p>
+  <h1 id="title">グループに<br>招待されています</h1>
+  <a id="open-btn" class="btn" href="#">Expo Go で開く</a>
+  <p class="note">
+    iPhone に Expo Go アプリが必要です。<br>
+    入っていない場合は App Store でインストールしてください。
+  </p>
+  <p class="code" id="code-label"></p>
+
+  <script>
+    // ── URLが変わったときはここだけ書き換える（1行） ──
+    var EXPO_BASE = "exp://p8ciwy0-ryu1025-8081.exp.direct";
+
+    var code = new URLSearchParams(location.search).get("code") || "";
+    if (code) {
+      document.getElementById("open-btn").href = EXPO_BASE + "/--/?code=" + code;
+      document.getElementById("code-label").textContent = "招待コード：" + code;
+    } else {
+      document.getElementById("title").textContent = "招待リンクが正しくありません";
+      document.getElementById("open-btn").style.display = "none";
+    }
+  </script>
+</body>
+</html>
