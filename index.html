@@ -8,77 +8,133 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, sans-serif;
-      background: #f5f3ef;
+      background: #f0ece2;
       color: #1a1a18;
       min-height: 100dvh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px 24px;
+      padding: 48px 24px;
+      gap: 0;
     }
     .label {
       font-size: 11px;
       letter-spacing: 0.5px;
       color: #888;
-      margin-bottom: 12px;
-    }
-    h1 {
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 1.5;
-      margin-bottom: 40px;
+      margin-bottom: 14px;
       text-align: center;
     }
-    .btn {
+    h1 {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .install-section {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 12px;
+    }
+    .install-label {
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .store-links {
+      display: flex;
+      gap: 8px;
+    }
+    .store-btn {
+      flex: 1;
+      display: block;
+      text-decoration: none;
+      color: #555;
+      border: 1px solid #ccc;
+      padding: 12px 8px;
+      font-size: 13px;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .divider {
+      width: 100%;
+      max-width: 320px;
+      height: 1px;
+      background: #ccc;
+      margin: 28px 0;
+    }
+    .open-btn {
       display: block;
       text-decoration: none;
       color: #1a1a18;
-      border: 1px solid #1a1a18;
-      padding: 18px 32px;
+      border-top: 1px solid #aaa;
+      border-bottom: 2px solid #1a1a18;
+      padding: 18px 0;
       font-size: 17px;
       text-align: center;
-      margin-bottom: 20px;
       width: 100%;
       max-width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .note {
+    .open-btn-arrow {
+      font-size: 17px;
+    }
+    .error-note {
       font-size: 13px;
       color: #888;
       text-align: center;
       line-height: 1.8;
       max-width: 280px;
     }
-    .code {
-      font-family: monospace;
-      font-size: 13px;
-      color: #555;
-      letter-spacing: 0.5px;
-      margin-top: 24px;
-    }
   </style>
 </head>
 <body>
   <p class="label">ばかを、ならべる。</p>
   <h1 id="title">グループに<br>招待されています</h1>
-  <a id="open-btn" class="btn" href="#">Expo Go で開く</a>
-  <p class="note">
-    iPhone に Expo Go アプリが必要です。<br>
-    入っていない場合は App Store でインストールしてください。
-  </p>
-  <p class="code" id="code-label"></p>
+
+  <div class="install-section" id="install-section">
+    <p class="install-label">Expo Go を入れる</p>
+    <div class="store-links">
+      <a class="store-btn" href="https://apps.apple.com/jp/app/expo-go/id982107779" target="_blank">
+        App Store<br>(iPhone)
+      </a>
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">
+        Google Play<br>(Android)
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <a id="open-btn" class="open-btn" href="#">
+    <span>入れたら、ここを押す</span>
+    <span class="open-btn-arrow">→</span>
+  </a>
 
   <script>
     // ── URLが変わったときはここだけ書き換える（1行） ──
     var EXPO_BASE = "exp://p8ciwy0-ryu1025-8081.exp.direct";
 
-    var code = new URLSearchParams(location.search).get("code") || "";
+    var params = new URLSearchParams(location.search);
+    var code = params.get("code") || "";
+    var name = params.get("name") || "";
+
     if (code) {
+      if (name) {
+        document.getElementById("title").textContent = name + "に\n招待されています";
+        document.getElementById("title").style.whiteSpace = "pre-line";
+      }
       document.getElementById("open-btn").href = EXPO_BASE + "/--/?code=" + code;
-      document.getElementById("code-label").textContent = "招待コード：" + code;
     } else {
-      document.getElementById("title").textContent = "招待リンクが正しくありません";
+      document.getElementById("title").textContent = "招待リンクが\n正しくありません";
+      document.getElementById("title").style.whiteSpace = "pre-line";
       document.getElementById("open-btn").style.display = "none";
+      document.getElementById("install-section").style.display = "none";
+      document.querySelector(".divider").style.display = "none";
     }
   </script>
 </body>
