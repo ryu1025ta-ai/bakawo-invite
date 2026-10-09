@@ -128,7 +128,7 @@
         document.getElementById("title").textContent = name + "に\n招待されています";
         document.getElementById("title").style.whiteSpace = "pre-line";
       }
-      document.getElementById("open-btn").href = EXPO_BASE + "/--/?code=" + code;
+      document.getElementById("open-btn").href = EXPO_BASE + "/--/?code=" + code + (name ? "&name=" + encodeURIComponent(name) : "");
     } else {
       document.getElementById("title").textContent = "招待リンクが\n正しくありません";
       document.getElementById("title").style.whiteSpace = "pre-line";
