@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おだい — 招待</title>
+  <style>
+    :root {
+      --bg:      #fcfbf8;
+      --ink:     #1e1c19;
+      --ink-sub: #6b665e;
+      --rule:    #e6e2da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #121211; --ink: #f2efe9; --ink-sub: #9c978e; --rule: #2e2c29; }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: var(--bg); color: var(--ink); font-family: sans-serif; }
+    body {
+      display: flex; flex-direction: column;
+      padding: 40px 24px 24px; max-width: 480px; margin: 0 auto;
+    }
+    .app-label { font-size: 12px; letter-spacing: 0.12em; color: var(--ink-sub); margin-bottom: 40px; }
+    h1 { font-size: 30px; font-weight: 900; letter-spacing: 0.06em; line-height: 1.4; margin-bottom: 16px; }
+    .desc { font-size: 15px; line-height: 1.8; color: var(--ink-sub); margin-bottom: 40px; }
+    .label { font-size: 12px; letter-spacing: 0.12em; color: var(--ink-sub); margin-bottom: 8px; }
+    .btn-primary {
+      display: flex; align-items: center; justify-content: center;
+      height: 56px; border: 1px solid var(--ink); color: var(--ink);
+      font-size: 16px; letter-spacing: 0.08em; text-decoration: none; margin-bottom: 8px;
+    }
+    .btn-secondary {
+      display: flex; align-items: center; justify-content: center;
+      height: 48px; border: 1px solid var(--rule); color: var(--ink);
+      font-size: 14px; letter-spacing: 0.04em; text-decoration: none; margin-bottom: 8px;
+    }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
+  </style>
+</head>
+<body>
+  <p class="app-label">おだい</p>
+  <h1>招待されています</h1>
+  <p class="desc">同じお題を撮って、友達と並べる。<br>アプリを入れてリンクから参加してください。</p>
+
+  <p class="label">アプリを入れる</p>
+  <a class="btn-secondary" href="https://apps.apple.com/jp/app/expo-go/id982107779" target="_blank">
+    iPhone（App Store）
+  </a>
+  <a class="btn-secondary" href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">
+    Android（Google Play）
+  </a>
+
+  <hr>
+
+  <p class="label">アプリを入れたら</p>
+  <a class="btn-primary" id="open-btn" href="#">
+    ここを押してアプリで開く →
+  </a>
+
+  <script>
+    (function () {
+      // ディープリンクの飛び先はここだけで管理する
+      // 本番アプリに切り替えるときは、この1行を 'odai:/' に変える
+      var DEEP_LINK_BASE = 'exp://z_dw2tk-ryu1025-8082.exp.direct/--';
+
+      var params = new URLSearchParams(location.search);
+      // コードは英数字のみ受け付ける（外部からの任意文字列を拒否）
+      var raw = params.get('code') || '';
+      var code = raw.replace(/[^A-Za-z0-9]/g, '');
+
+      var deepLink = DEEP_LINK_BASE + '/?code=' + code;
+      document.getElementById('open-btn').href = deepLink;
+    })();
+  </script>
+</body>
+</html>
