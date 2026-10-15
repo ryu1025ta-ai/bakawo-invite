@@ -1,0 +1,1105 @@
+[
+  {
+    "id": "welcome",
+    "title": "入口",
+    "path": "/",
+    "sample": "welcome",
+    "no": "01",
+    "shots": {
+      "light": "01-welcome-light.png",
+      "dark": "01-welcome-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "同じお題で、撮って、並べる。",
+        "たとえば「いま、足もとにあるもの。」",
+        "はじめる",
+        "続けると、",
+        "利用規約",
+        "プライバシー",
+        "に同意したことになります。"
+      ],
+      "buttons": [
+        {
+          "label": "はじめる",
+          "role": "div",
+          "w": 342,
+          "h": 56
+        },
+        {
+          "label": "利用規約",
+          "role": "link",
+          "w": 48,
+          "h": 44
+        },
+        {
+          "label": "プライバシー",
+          "role": "link",
+          "w": 70,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "profile-setup",
+    "title": "プロフィール作成",
+    "path": "/setup/profile",
+    "sample": "setup",
+    "no": "02",
+    "shots": {
+      "light": "02-profile-setup-light.png",
+      "dark": "02-profile-setup-dark.png"
+    },
+    "info": {
+      "texts": [
+        "1 / 2",
+        "あなたのこと",
+        "名前",
+        "@ユーザーID",
+        "誕生日",
+        "年",
+        "月",
+        "日",
+        "年齢の確認に使います。月日だけ、友達に見せることもできます（あとで変えられます）。",
+        "月日を友達に見せる",
+        "次へ",
+        "→"
+      ],
+      "buttons": [
+        {
+          "label": "(名前なし)",
+          "role": "input",
+          "w": 342,
+          "h": 44
+        },
+        {
+          "label": "例: taro_yamada",
+          "role": "input",
+          "w": 342,
+          "h": 43
+        },
+        {
+          "label": "1993",
+          "role": "input",
+          "w": 195,
+          "h": 43
+        },
+        {
+          "label": "10",
+          "role": "input",
+          "w": 195,
+          "h": 43
+        },
+        {
+          "label": "25",
+          "role": "input",
+          "w": 195,
+          "h": 43
+        },
+        {
+          "label": "(名前なし)",
+          "role": "switch",
+          "w": 40,
+          "h": 20
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-before",
+    "title": "きょう（撮る前・ぼかし）",
+    "path": "/home",
+    "sample": "before",
+    "no": "03",
+    "shots": {
+      "light": "03-today-before-light.png",
+      "dark": "03-today-before-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "きょうのお題",
+        "10.15 木",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "友達になった順",
+        "撮る",
+        "撮ると、みんなのが見られます。",
+        "ハ",
+        "ハル",
+        "ミ",
+        "ミナト",
+        "ナ",
+        "ナツキ",
+        "きょう",
+        "さがす",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "撮る 撮ると、みんなのが見られます。",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-after",
+    "title": "きょう（撮った後・ならび）",
+    "path": "/home",
+    "sample": "after",
+    "no": "04",
+    "shots": {
+      "light": "04-today-after-light.png",
+      "dark": "04-today-after-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "きょうのお題",
+        "10.15 木",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "友達になった順",
+        "今日はもう出しました",
+        "ユ",
+        "ユイ",
+        "笑",
+        "良",
+        "驚",
+        "ハ",
+        "ハル",
+        "ミ",
+        "ミナト",
+        "ナ",
+        "ナツキ",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "ユイ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ハル",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ミナト",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ナツキ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-nobody",
+    "title": "きょう（誰も撮っていない）",
+    "path": "/home",
+    "sample": "nobody",
+    "no": "05",
+    "shots": {
+      "light": "05-today-nobody-light.png",
+      "dark": "05-today-nobody-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "きょうのお題",
+        "10.15 木",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "友達になった順",
+        "撮る",
+        "撮ると、みんなのが見られます。",
+        "まだ誰も撮っていません",
+        "きのうのならび",
+        "10.14 水",
+        "窓のそとの色",
+        "ユ",
+        "ユイ",
+        "ハ",
+        "ハル",
+        "ミ",
+        "ミナト",
+        "ソ",
+        "ソラ",
+        "きょう",
+        "さがす",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "撮る 撮ると、みんなのが見られます。",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ユイ",
+          "role": "div",
+          "w": 185,
+          "h": 200
+        },
+        {
+          "label": "ハル",
+          "role": "div",
+          "w": 185,
+          "h": 200
+        },
+        {
+          "label": "ミナト",
+          "role": "div",
+          "w": 185,
+          "h": 200
+        },
+        {
+          "label": "ソラ",
+          "role": "div",
+          "w": 185,
+          "h": 200
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-zero",
+    "title": "きょう（友達0人）",
+    "path": "/home",
+    "sample": "zero",
+    "no": "06",
+    "shots": {
+      "light": "06-today-zero-light.png",
+      "dark": "06-today-zero-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "きょうのお題",
+        "10.15 木",
+        "ふと目に入った、丸いもの",
+        "友達を呼ぶ",
+        "友達がいると、同じお題の写真がここに並びます。",
+        "このリンクから入った人とは、すぐ友達になれます。",
+        "↗",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "友達を呼ぶ ↗",
+          "role": "button",
+          "w": 358,
+          "h": 56
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-zero-posted",
+    "title": "きょう（友達0人・撮った後）",
+    "path": "/home",
+    "sample": "zeroposted",
+    "no": "07",
+    "shots": {
+      "light": "07-today-zero-posted-light.png",
+      "dark": "07-today-zero-posted-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "きょうのお題",
+        "10.15 木",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "今日はもう出しました",
+        "ユ",
+        "ユイ",
+        "友達を呼ぶ",
+        "友達がいると、同じお題の写真がここに並びます。",
+        "このリンクから入った人とは、すぐ友達になれます。",
+        "↗",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "ユイ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "友達を呼ぶ ↗",
+          "role": "button",
+          "w": 358,
+          "h": 56
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "viewer",
+    "title": "大きく見る（判子つき）",
+    "path": "/viewer?userId=sample-haru&date=2026-10-15",
+    "sample": "after",
+    "no": "08",
+    "shots": {
+      "light": "08-viewer-light.png",
+      "dark": "08-viewer-dark.png"
+    },
+    "info": {
+      "texts": [
+        "ハ",
+        "ハル",
+        "ミ",
+        "笑",
+        "ミナト",
+        "ナ",
+        "ナツキ",
+        "ユ",
+        "良",
+        "ユイ",
+        "驚",
+        "← 戻る"
+      ],
+      "buttons": [
+        {
+          "label": "(名前なし)",
+          "role": "div",
+          "w": 96,
+          "h": 128
+        },
+        {
+          "label": "笑の判子",
+          "role": "button",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "label": "良の判子",
+          "role": "button",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "label": "驚の判子",
+          "role": "button",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "label": "← 戻る",
+          "role": "div",
+          "w": 61,
+          "h": 27
+        }
+      ]
+    }
+  },
+  {
+    "id": "search",
+    "title": "さがす",
+    "path": "/suggest",
+    "sample": "social",
+    "no": "09",
+    "shots": {
+      "light": "09-search-light.png",
+      "dark": "09-search-dark.png"
+    },
+    "info": {
+      "texts": [
+        "さがす",
+        "友達を呼ぶ",
+        "このリンクから入った人とは、すぐ友達になれます。",
+        "↗",
+        "知り合いかも",
+        "カ",
+        "カイ",
+        "@kai",
+        "フォローする",
+        "レ",
+        "レン",
+        "@ren",
+        "ミ",
+        "ミオ",
+        "@mio",
+        "リ",
+        "リン",
+        "@rin",
+        "きょう",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "友達を呼ぶ このリンクから入った人とは、すぐ友達になれます。 ↗",
+          "role": "button",
+          "w": 358,
+          "h": 78
+        },
+        {
+          "label": "@ID で探す",
+          "role": "input",
+          "w": 300,
+          "h": 44
+        },
+        {
+          "label": "カ カイ @kai",
+          "role": "div",
+          "w": 232,
+          "h": 44
+        },
+        {
+          "label": "フォローする",
+          "role": "button",
+          "w": 110,
+          "h": 44
+        },
+        {
+          "label": "レ レン @ren",
+          "role": "div",
+          "w": 232,
+          "h": 44
+        },
+        {
+          "label": "フォローする",
+          "role": "button",
+          "w": 110,
+          "h": 44
+        },
+        {
+          "label": "ミ ミオ @mio",
+          "role": "div",
+          "w": 232,
+          "h": 44
+        },
+        {
+          "label": "フォローする",
+          "role": "button",
+          "w": 110,
+          "h": 44
+        },
+        {
+          "label": "リ リン @rin",
+          "role": "div",
+          "w": 232,
+          "h": 44
+        },
+        {
+          "label": "フォローする",
+          "role": "button",
+          "w": 110,
+          "h": 44
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "me",
+    "title": "わたし",
+    "path": "/me",
+    "sample": "social",
+    "no": "10",
+    "shots": {
+      "light": "10-me-light.png",
+      "dark": "10-me-dark.png"
+    },
+    "info": {
+      "texts": [
+        "@yui",
+        "ユ",
+        "ユイ",
+        "フォロワー",
+        "フォロー中",
+        "友達を呼ぶ",
+        "↗",
+        "フォローリクエスト",
+        "→",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "設定",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォロワー",
+          "role": "div",
+          "w": 70,
+          "h": 20
+        },
+        {
+          "label": "フォロー中",
+          "role": "div",
+          "w": 70,
+          "h": 20
+        },
+        {
+          "label": "友達を呼ぶ ↗",
+          "role": "button",
+          "w": 358,
+          "h": 52
+        },
+        {
+          "label": "フォローリクエスト →",
+          "role": "button",
+          "w": 358,
+          "h": 52
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 43
+        }
+      ]
+    }
+  },
+  {
+    "id": "profile-locked",
+    "title": "友達のプロフィール（鍵あり・未フォロー）",
+    "path": "/profile/ren",
+    "sample": "social",
+    "no": "11",
+    "shots": {
+      "light": "11-profile-locked-light.png",
+      "dark": "11-profile-locked-dark.png"
+    },
+    "info": {
+      "texts": [
+        "@ren",
+        "レ",
+        "レン",
+        "フォローする",
+        "鍵アカです"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォローする",
+          "role": "button",
+          "w": 358,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "profile-following",
+    "title": "友達のプロフィール（フォロー中）",
+    "path": "/profile/haru",
+    "sample": "social",
+    "no": "12",
+    "shots": {
+      "light": "12-profile-following-light.png",
+      "dark": "12-profile-following-dark.png"
+    },
+    "info": {
+      "texts": [
+        "@haru",
+        "ハ",
+        "ハル",
+        "3月14日",
+        "フォロー中 ✓",
+        "おたがいにフォローしています",
+        "フォロワー",
+        "フォロー中",
+        "ユ",
+        "ユイ",
+        "@yui",
+        "ミ",
+        "ミナト",
+        "@minato"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォロー中 ✓",
+          "role": "button",
+          "w": 358,
+          "h": 44
+        },
+        {
+          "label": "フォロワー",
+          "role": "div",
+          "w": 179,
+          "h": 29
+        },
+        {
+          "label": "フォロー中",
+          "role": "div",
+          "w": 179,
+          "h": 29
+        },
+        {
+          "label": "ユ ユイ @yui",
+          "role": "div",
+          "w": 358,
+          "h": 68
+        },
+        {
+          "label": "ミ ミナト @minato",
+          "role": "div",
+          "w": 358,
+          "h": 68
+        }
+      ]
+    }
+  },
+  {
+    "id": "following",
+    "title": "フォロー中の一覧",
+    "path": "/people?kind=following",
+    "sample": "social",
+    "no": "13",
+    "shots": {
+      "light": "13-following-light.png",
+      "dark": "13-following-dark.png"
+    },
+    "info": {
+      "texts": [
+        "フォロー中",
+        "ハ",
+        "ハル",
+        "@haru",
+        "ミ",
+        "ミナト",
+        "@minato",
+        "ソ",
+        "ソラ",
+        "@sora",
+        "ナ",
+        "ナツキ",
+        "@natsuki"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "ハ ハル @haru",
+          "role": "div",
+          "w": 390,
+          "h": 76
+        },
+        {
+          "label": "ミ ミナト @minato",
+          "role": "div",
+          "w": 390,
+          "h": 76
+        },
+        {
+          "label": "ソ ソラ @sora",
+          "role": "div",
+          "w": 390,
+          "h": 76
+        },
+        {
+          "label": "ナ ナツキ @natsuki",
+          "role": "div",
+          "w": 390,
+          "h": 76
+        }
+      ]
+    }
+  },
+  {
+    "id": "requests",
+    "title": "承認待ち",
+    "path": "/requests",
+    "sample": "social",
+    "no": "14",
+    "shots": {
+      "light": "14-requests-light.png",
+      "dark": "14-requests-dark.png"
+    },
+    "info": {
+      "texts": [
+        "フォローリクエスト",
+        "ト",
+        "トモ",
+        "@tomo",
+        "承認",
+        "削除",
+        "削除しても、相手には知らされません。"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "承認",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "削除",
+          "role": "button",
+          "w": 42,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "settings",
+    "title": "設定",
+    "path": "/settings",
+    "sample": "social",
+    "no": "15",
+    "shots": {
+      "light": "15-settings-light.png",
+      "dark": "15-settings-dark.png"
+    },
+    "info": {
+      "texts": [
+        "設定",
+        "アカウント",
+        "鍵をかける",
+        "承認した人だけ、あなたを見られます。",
+        "利用規約",
+        "→",
+        "プライバシー",
+        "ログアウト"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "(名前なし)",
+          "role": "switch",
+          "w": 40,
+          "h": 20
+        },
+        {
+          "label": "利用規約 →",
+          "role": "button",
+          "w": 358,
+          "h": 54
+        },
+        {
+          "label": "プライバシー →",
+          "role": "button",
+          "w": 358,
+          "h": 54
+        },
+        {
+          "label": "ログアウト",
+          "role": "div",
+          "w": 358,
+          "h": 52
+        }
+      ]
+    }
+  },
+  {
+    "id": "invite",
+    "title": "友達を呼ぶ",
+    "path": "/setup/invite",
+    "sample": "social",
+    "no": "16",
+    "shots": {
+      "light": "16-invite-light.png",
+      "dark": "16-invite-dark.png"
+    },
+    "info": {
+      "texts": [
+        "友達を、3人。",
+        "3人そろうと、みんなの写真を並べて見られます。",
+        "このリンクから入った人とは、すぐ友達になれます。",
+        "LINEで送る",
+        "ほかの方法で送る",
+        "戻る"
+      ],
+      "buttons": [
+        {
+          "label": "LINEで送る",
+          "role": "div",
+          "w": 342,
+          "h": 64
+        },
+        {
+          "label": "ほかの方法で送る",
+          "role": "div",
+          "w": 342,
+          "h": 56
+        },
+        {
+          "label": "戻る",
+          "role": "div",
+          "w": 390,
+          "h": 35
+        }
+      ]
+    }
+  },
+  {
+    "id": "legal-terms",
+    "title": "利用規約（仮）",
+    "path": "/legal?kind=terms",
+    "sample": "social",
+    "no": "17",
+    "shots": {
+      "light": "17-legal-terms-light.png",
+      "dark": "17-legal-terms-dark.png"
+    },
+    "info": {
+      "texts": [
+        "利用規約",
+        "これは仮のページです。正式な文面は、公開までに差し替えます。",
+        "13歳以上の方が使えます。",
+        "退会・削除のご連絡",
+        "やめたいとき、写真や情報を消したいときは、このアプリを渡してくれた運営者に直接伝えてください。連絡先は、正式に公開するまでにここへ書きます。"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        }
+      ]
+    }
+  }
+]
