@@ -126,20 +126,26 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
+        "ナツキ・ミナトほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
-        "ミ",
-        "ミナト",
         "ナ",
         "ナツキ",
+        "ミ",
+        "ミナト",
+        "ハ",
+        "ハル",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -210,22 +216,28 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
+        "まだ見ていない写真から",
         "今日はもう出しました",
         "ユ",
         "ユイ",
         "ハ",
         "ミ",
         "ナ",
-        "ハル",
-        "ミナト",
         "ナツキ",
+        "ミナト",
+        "ハル",
         "きょう",
         "さがす",
         "撮る",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -251,13 +263,130 @@
           "h": 232
         },
         {
-          "label": "ハル",
+          "label": "ナツキ、まだ見ていません",
           "role": "div",
           "w": 185,
           "h": 232
         },
         {
-          "label": "ミナト",
+          "label": "ミナト、まだ見ていません",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ハル、まだ見ていません",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-after-seen",
+    "title": "きょう（撮った後・ナツキを見たあと＝ナツキは後ろに下がり点が消える）",
+    "path": "/home",
+    "sample": "after",
+    "local": {
+      "seen": {
+        "2026-10-18": [
+          "sample-natsuki"
+        ]
+      }
+    },
+    "no": "05",
+    "shots": {
+      "light": "05-today-after-seen-light.png",
+      "dark": "05-today-after-seen-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "並べる",
+        "流す",
+        "きょうのお題",
+        "10.18 日",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "まだ見ていない写真から",
+        "今日はもう出しました",
+        "ユ",
+        "ユイ",
+        "ハ",
+        "ミ",
+        "ナ",
+        "ミナト",
+        "ハル",
+        "ナツキ",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "並べる",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "流す",
+          "role": "button",
+          "w": 56,
+          "h": 44
+        },
+        {
+          "label": "ユイ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ミナト、まだ見ていません",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ハル、まだ見ていません",
           "role": "div",
           "w": 185,
           "h": 232
@@ -296,19 +425,26 @@
     }
   },
   {
-    "id": "today-before-feed",
-    "title": "きょう（撮る前・流す）",
+    "id": "today-after-pinned",
+    "title": "きょう（撮った後・全員見た・ハルをピン留め中＝ハルが先）",
     "path": "/home",
-    "sample": "before",
-    "steps": [
-      {
-        "click": "流す"
-      }
-    ],
-    "no": "05",
+    "sample": "after",
+    "local": {
+      "seen": {
+        "2026-10-18": [
+          "sample-haru",
+          "sample-minato",
+          "sample-natsuki"
+        ]
+      },
+      "pins": [
+        "sample-haru"
+      ]
+    },
+    "no": "06",
     "shots": {
-      "light": "05-today-before-feed-light.png",
-      "dark": "05-today-before-feed-dark.png"
+      "light": "06-today-after-pinned-light.png",
+      "dark": "06-today-after-pinned-dark.png"
     },
     "info": {
       "texts": [
@@ -319,21 +455,341 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
+        "今日はもう出しました",
+        "ユ",
+        "ユイ",
+        "ハ",
+        "ミ",
+        "ナ",
+        "ハル",
+        "ナツキ",
+        "ミナト",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "並べる",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "流す",
+          "role": "button",
+          "w": 56,
+          "h": 44
+        },
+        {
+          "label": "ユイ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ハル",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ナツキ",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "ミナト",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-after-feed-seen",
+    "title": "きょう（撮った後・流す・ナツキを見たあと）",
+    "path": "/home",
+    "sample": "after",
+    "local": {
+      "seen": {
+        "2026-10-18": [
+          "sample-natsuki"
+        ]
+      }
+    },
+    "steps": [
+      {
+        "click": "流す"
+      }
+    ],
+    "no": "07",
+    "shots": {
+      "light": "07-today-after-feed-seen-light.png",
+      "dark": "07-today-after-feed-seen-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "並べる",
+        "流す",
+        "きょうのお題",
+        "10.18 日",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "まだ見ていない写真から",
+        "今日はもう出しました",
+        "ユ",
+        "ユイ",
+        "ハ",
+        "ミ",
+        "ナ",
+        "反応・コメント",
+        "ミナト",
+        "ハル",
+        "ナツキ",
+        "今日はここまで",
+        "きょう",
+        "さがす",
+        "撮る",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "並べる",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "流す",
+          "role": "button",
+          "w": 56,
+          "h": 44
+        },
+        {
+          "label": "ユイさんの写真を大きく見る",
+          "role": "button",
+          "w": 390,
+          "h": 488
+        },
+        {
+          "label": "反応・コメント",
+          "role": "button",
+          "w": 390,
+          "h": 44
+        },
+        {
+          "label": "ミナトさんの写真を大きく見る",
+          "role": "button",
+          "w": 390,
+          "h": 488
+        },
+        {
+          "label": "反応・コメント",
+          "role": "button",
+          "w": 390,
+          "h": 44
+        },
+        {
+          "label": "ハルさんの写真を大きく見る",
+          "role": "button",
+          "w": 390,
+          "h": 488
+        },
+        {
+          "label": "反応・コメント",
+          "role": "button",
+          "w": 390,
+          "h": 44
+        },
+        {
+          "label": "ナツキさんの写真を大きく見る",
+          "role": "button",
+          "w": 390,
+          "h": 488
+        },
+        {
+          "label": "反応・コメント",
+          "role": "button",
+          "w": 390,
+          "h": 44
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        }
+      ]
+    }
+  },
+  {
+    "id": "activity",
+    "title": "お知らせ（自分の写真への反応・直近7日）",
+    "path": "/activity",
+    "sample": "social",
+    "no": "08",
+    "shots": {
+      "light": "08-activity-light.png",
+      "dark": "08-activity-dark.png"
+    },
+    "info": {
+      "texts": [
+        "お知らせ",
+        "ナ",
+        "ナツキが😮を送りました",
+        "30分前 · 10.18",
+        "ミ",
+        "ミナトがハートを送りました",
+        "40分前 · 10.18",
+        "ハ",
+        "ハルが😂を送りました",
+        "50分前 · 10.18",
+        "直近7日分です。"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "ナ ナツキが😮を送りました 30分前 · 10.18",
+          "role": "button",
+          "w": 390,
+          "h": 64
+        },
+        {
+          "label": "ミ ミナトがハートを送りました 40分前 · 10.18",
+          "role": "button",
+          "w": 390,
+          "h": 64
+        },
+        {
+          "label": "ハ ハルが😂を送りました 50分前 · 10.18",
+          "role": "button",
+          "w": 390,
+          "h": 64
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-before-feed",
+    "title": "きょう（撮る前・流す）",
+    "path": "/home",
+    "sample": "before",
+    "steps": [
+      {
+        "click": "流す"
+      }
+    ],
+    "no": "09",
+    "shots": {
+      "light": "09-today-before-feed-light.png",
+      "dark": "09-today-before-feed-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "並べる",
+        "流す",
+        "きょうのお題",
+        "10.18 日",
+        "ふと目に入った、丸いもの",
+        "きょうのならび",
+        "ナツキ・ミナトほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
-        "ミ",
-        "ミナト",
         "ナ",
         "ナツキ",
+        "ミ",
+        "ミナト",
+        "ハ",
+        "ハル",
         "今日はここまで",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -359,7 +815,7 @@
           "h": 200
         },
         {
-          "label": "ハル",
+          "label": "ナツキ",
           "role": "button",
           "w": 390,
           "h": 488
@@ -371,7 +827,7 @@
           "h": 488
         },
         {
-          "label": "ナツキ",
+          "label": "ハル",
           "role": "button",
           "w": 390,
           "h": 488
@@ -413,10 +869,10 @@
         "click": "流す"
       }
     ],
-    "no": "06",
+    "no": "10",
     "shots": {
-      "light": "06-today-after-feed-light.png",
-      "dark": "06-today-after-feed-dark.png"
+      "light": "10-today-after-feed-light.png",
+      "dark": "10-today-after-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -427,7 +883,7 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
+        "まだ見ていない写真から",
         "今日はもう出しました",
         "ユ",
         "ユイ",
@@ -435,9 +891,9 @@
         "ミ",
         "ナ",
         "反応・コメント",
-        "ハル",
-        "ミナト",
         "ナツキ",
+        "ミナト",
+        "ハル",
         "今日はここまで",
         "きょう",
         "さがす",
@@ -445,6 +901,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -476,7 +938,7 @@
           "h": 44
         },
         {
-          "label": "ハルさんの写真を大きく見る",
+          "label": "ナツキさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -500,7 +962,7 @@
           "h": 44
         },
         {
-          "label": "ナツキさんの写真を大きく見る",
+          "label": "ハルさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -551,10 +1013,10 @@
         "scroll": "end"
       }
     ],
-    "no": "07",
+    "no": "11",
     "shots": {
-      "light": "07-today-feed-end-light.png",
-      "dark": "07-today-feed-end-dark.png"
+      "light": "11-today-feed-end-light.png",
+      "dark": "11-today-feed-end-dark.png"
     },
     "info": {
       "texts": [
@@ -565,7 +1027,7 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
+        "まだ見ていない写真から",
         "今日はもう出しました",
         "ユ",
         "ユイ",
@@ -573,9 +1035,9 @@
         "ミ",
         "ナ",
         "反応・コメント",
-        "ハル",
-        "ミナト",
         "ナツキ",
+        "ミナト",
+        "ハル",
         "今日はここまで",
         "きょう",
         "さがす",
@@ -583,6 +1045,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -614,7 +1082,7 @@
           "h": 44
         },
         {
-          "label": "ハルさんの写真を大きく見る",
+          "label": "ナツキさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -638,7 +1106,7 @@
           "h": 44
         },
         {
-          "label": "ナツキさんの写真を大きく見る",
+          "label": "ハルさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -681,10 +1149,10 @@
     "title": "きょう（お題が届く前・前のお題を撮った後）",
     "path": "/home",
     "sample": "waiting",
-    "no": "08",
+    "no": "12",
     "shots": {
-      "light": "08-today-waiting-light.png",
-      "dark": "08-today-waiting-dark.png"
+      "light": "12-today-waiting-light.png",
+      "dark": "12-today-waiting-dark.png"
     },
     "info": {
       "texts": [
@@ -695,23 +1163,29 @@
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
-        "友達になった順",
+        "まだ見ていない写真から",
         "もう出しました",
         "ユ",
         "ユイ",
         "ハ",
         "ミ",
         "ナ",
-        "ハル",
-        "ミナト",
         "ソ",
         "ソラ",
+        "ミナト",
+        "ハル",
         "きょう",
         "さがす",
         "撮る",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -737,19 +1211,19 @@
           "h": 232
         },
         {
-          "label": "ハル",
+          "label": "ソラ、まだ見ていません",
           "role": "div",
           "w": 185,
           "h": 232
         },
         {
-          "label": "ミナト",
+          "label": "ミナト、まだ見ていません",
           "role": "div",
           "w": 185,
           "h": 232
         },
         {
-          "label": "ソラ",
+          "label": "ハル、まだ見ていません",
           "role": "div",
           "w": 185,
           "h": 232
@@ -791,10 +1265,10 @@
         "click": "流す"
       }
     ],
-    "no": "09",
+    "no": "13",
     "shots": {
-      "light": "09-today-waiting-feed-light.png",
-      "dark": "09-today-waiting-feed-dark.png"
+      "light": "13-today-waiting-feed-light.png",
+      "dark": "13-today-waiting-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -805,7 +1279,7 @@
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
-        "友達になった順",
+        "まだ見ていない写真から",
         "もう出しました",
         "ユ",
         "ユイ",
@@ -813,10 +1287,10 @@
         "ミ",
         "ナ",
         "反応・コメント",
-        "ハル",
-        "ミナト",
         "ソ",
         "ソラ",
+        "ミナト",
+        "ハル",
         "ここまで",
         "きょう",
         "さがす",
@@ -824,6 +1298,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "新しいお知らせがあります",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -855,7 +1335,7 @@
           "h": 44
         },
         {
-          "label": "ハルさんの写真を大きく見る",
+          "label": "ソラさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -879,7 +1359,7 @@
           "h": 44
         },
         {
-          "label": "ソラさんの写真を大きく見る",
+          "label": "ハルさんの写真を大きく見る",
           "role": "button",
           "w": 390,
           "h": 488
@@ -922,10 +1402,10 @@
     "title": "きょう（お題が届く前・前のお題を撮る前）",
     "path": "/home",
     "sample": "prevbefore",
-    "no": "10",
+    "no": "14",
     "shots": {
-      "light": "10-today-prevbefore-light.png",
-      "dark": "10-today-prevbefore-dark.png"
+      "light": "14-today-prevbefore-light.png",
+      "dark": "14-today-prevbefore-dark.png"
     },
     "info": {
       "texts": [
@@ -936,20 +1416,26 @@
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
-        "友達になった順",
+        "ミナト・ソラほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
         "ミ",
         "ミナト",
         "ソ",
         "ソラ",
+        "ハ",
+        "ハル",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1006,10 +1492,10 @@
     "title": "きょう（お題が届く前・次のお題が未登録）",
     "path": "/home",
     "sample": "prevnonext",
-    "no": "11",
+    "no": "15",
     "shots": {
-      "light": "11-today-prevnonext-light.png",
-      "dark": "11-today-prevnonext-dark.png"
+      "light": "15-today-prevnonext-light.png",
+      "dark": "15-today-prevnonext-dark.png"
     },
     "info": {
       "texts": [
@@ -1019,20 +1505,26 @@
         "10.17 のお題",
         "窓のそとの色",
         "ならび",
-        "友達になった順",
+        "ミナト・ソラほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
         "ミ",
         "ミナト",
         "ソ",
         "ソラ",
+        "ハ",
+        "ハル",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1095,10 +1587,10 @@
         "wait": 800
       }
     ],
-    "no": "12",
+    "no": "16",
     "shots": {
-      "light": "12-today-rejected-light.png",
-      "dark": "12-today-rejected-dark.png"
+      "light": "16-today-rejected-light.png",
+      "dark": "16-today-rejected-dark.png"
     },
     "info": {
       "texts": [
@@ -1112,20 +1604,26 @@
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
-        "友達になった順",
+        "ミナト・ソラほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
         "ミ",
         "ミナト",
         "ソ",
         "ソラ",
+        "ハ",
+        "ハル",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1199,10 +1697,10 @@
         "click": "流す"
       }
     ],
-    "no": "13",
+    "no": "17",
     "shots": {
-      "light": "13-today-prevbefore-feed-light.png",
-      "dark": "13-today-prevbefore-feed-dark.png"
+      "light": "17-today-prevbefore-feed-light.png",
+      "dark": "17-today-prevbefore-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -1213,21 +1711,27 @@
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
-        "友達になった順",
+        "ミナト・ソラほかが撮りました",
         "撮る",
         "撮ると、みんなのが見られます。",
-        "ハ",
-        "ハル",
         "ミ",
         "ミナト",
         "ソ",
         "ソラ",
+        "ハ",
+        "ハル",
         "ここまで",
         "きょう",
         "さがす",
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1253,12 +1757,6 @@
           "h": 200
         },
         {
-          "label": "ハル",
-          "role": "button",
-          "w": 390,
-          "h": 488
-        },
-        {
           "label": "ミナト",
           "role": "button",
           "w": 390,
@@ -1266,6 +1764,12 @@
         },
         {
           "label": "ソラ",
+          "role": "button",
+          "w": 390,
+          "h": 488
+        },
+        {
+          "label": "ハル",
           "role": "button",
           "w": 390,
           "h": 488
@@ -1302,10 +1806,10 @@
     "title": "きょう（誰も撮っていない）",
     "path": "/home",
     "sample": "nobody",
-    "no": "14",
+    "no": "18",
     "shots": {
-      "light": "14-today-nobody-light.png",
-      "dark": "14-today-nobody-dark.png"
+      "light": "18-today-nobody-light.png",
+      "dark": "18-today-nobody-dark.png"
     },
     "info": {
       "texts": [
@@ -1316,7 +1820,6 @@
         "10.18 日",
         "ふと目に入った、丸いもの",
         "きょうのならび",
-        "友達になった順",
         "撮る",
         "撮ると、みんなのが見られます。",
         "まだ誰も撮っていません",
@@ -1325,6 +1828,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1381,10 +1890,10 @@
     "title": "きょう（友達0人）",
     "path": "/home",
     "sample": "zero",
-    "no": "15",
+    "no": "19",
     "shots": {
-      "light": "15-today-zero-light.png",
-      "dark": "15-today-zero-dark.png"
+      "light": "19-today-zero-light.png",
+      "dark": "19-today-zero-dark.png"
     },
     "info": {
       "texts": [
@@ -1415,6 +1924,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1488,10 +2003,10 @@
         "click": "流す"
       }
     ],
-    "no": "16",
+    "no": "20",
     "shots": {
-      "light": "16-today-zero-feed-light.png",
-      "dark": "16-today-zero-feed-dark.png"
+      "light": "20-today-zero-feed-light.png",
+      "dark": "20-today-zero-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -1513,6 +2028,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1587,10 +2108,10 @@
     "title": "きょう（友達0人・撮った後）",
     "path": "/home",
     "sample": "zeroposted",
-    "no": "17",
+    "no": "21",
     "shots": {
-      "light": "17-today-zero-posted-light.png",
-      "dark": "17-today-zero-posted-dark.png"
+      "light": "21-today-zero-posted-light.png",
+      "dark": "21-today-zero-posted-dark.png"
     },
     "info": {
       "texts": [
@@ -1614,6 +2135,12 @@
         "わたし"
       ],
       "buttons": [
+        {
+          "label": "お知らせ",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
         {
           "label": "フォローリクエスト",
           "role": "button",
@@ -1688,10 +2215,10 @@
     "title": "大きく見る（友達の写真・ハート・絵文字・コメント）",
     "path": "/viewer?userId=sample-haru&date=2026-10-18",
     "sample": "social",
-    "no": "18",
+    "no": "22",
     "shots": {
-      "light": "18-viewer-light.png",
-      "dark": "18-viewer-dark.png"
+      "light": "22-viewer-light.png",
+      "dark": "22-viewer-dark.png"
     },
     "info": {
       "texts": [
@@ -1810,10 +2337,10 @@
         "wait": 220
       }
     ],
-    "no": "19",
+    "no": "23",
     "shots": {
-      "light": "19-viewer-burst-light.png",
-      "dark": "19-viewer-burst-dark.png"
+      "light": "23-viewer-burst-light.png",
+      "dark": "23-viewer-burst-dark.png"
     },
     "info": {
       "texts": [
@@ -1922,10 +2449,10 @@
     "title": "大きく見る（自分の写真・押した人の一覧）",
     "path": "/viewer?userId=sample-me&date=2026-10-18",
     "sample": "social",
-    "no": "20",
+    "no": "24",
     "shots": {
-      "light": "20-viewer-own-light.png",
-      "dark": "20-viewer-own-dark.png"
+      "light": "24-viewer-own-light.png",
+      "dark": "24-viewer-own-dark.png"
     },
     "info": {
       "texts": [
@@ -1980,10 +2507,10 @@
     "title": "さがす",
     "path": "/suggest",
     "sample": "social",
-    "no": "21",
+    "no": "25",
     "shots": {
-      "light": "21-search-light.png",
-      "dark": "21-search-dark.png"
+      "light": "25-search-light.png",
+      "dark": "25-search-dark.png"
     },
     "info": {
       "texts": [
@@ -2102,10 +2629,10 @@
     "title": "わたし",
     "path": "/me",
     "sample": "social",
-    "no": "22",
+    "no": "26",
     "shots": {
-      "light": "22-me-light.png",
-      "dark": "22-me-dark.png"
+      "light": "26-me-light.png",
+      "dark": "26-me-dark.png"
     },
     "info": {
       "texts": [
@@ -2118,6 +2645,7 @@
         "プロフィールを編集",
         "プロフィールを共有",
         "友達を呼ぶ",
+        "3日 続けて撮っています",
         "9マス",
         "好きな食べ物",
         "からあげ",
@@ -2270,10 +2798,10 @@
     "path": "/me",
     "sample": "social",
     "click": "カレンダー",
-    "no": "23",
+    "no": "27",
     "shots": {
-      "light": "23-me-calendar-light.png",
-      "dark": "23-me-calendar-dark.png"
+      "light": "27-me-calendar-light.png",
+      "dark": "27-me-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -2286,6 +2814,7 @@
         "プロフィールを編集",
         "プロフィールを共有",
         "友達を呼ぶ",
+        "3日 続けて撮っています",
         "9マス",
         "好きな食べ物",
         "からあげ",
@@ -2483,10 +3012,10 @@
     "title": "プロフィールを編集",
     "path": "/edit-profile",
     "sample": "social",
-    "no": "24",
+    "no": "28",
     "shots": {
-      "light": "24-edit-profile-light.png",
-      "dark": "24-edit-profile-dark.png"
+      "light": "28-edit-profile-light.png",
+      "dark": "28-edit-profile-dark.png"
     },
     "info": {
       "texts": [
@@ -2702,10 +3231,10 @@
     "title": "プロフィールを共有",
     "path": "/share",
     "sample": "social",
-    "no": "25",
+    "no": "29",
     "shots": {
-      "light": "25-share-light.png",
-      "dark": "25-share-dark.png"
+      "light": "29-share-light.png",
+      "dark": "29-share-dark.png"
     },
     "info": {
       "texts": [
@@ -2751,10 +3280,10 @@
     "title": "友達のプロフィール（鍵あり・未フォロー）",
     "path": "/profile/ren",
     "sample": "social",
-    "no": "26",
+    "no": "30",
     "shots": {
-      "light": "26-profile-locked-light.png",
-      "dark": "26-profile-locked-dark.png"
+      "light": "30-profile-locked-light.png",
+      "dark": "30-profile-locked-dark.png"
     },
     "info": {
       "texts": [
@@ -2786,10 +3315,10 @@
     "title": "友達のプロフィール（フォロー中）",
     "path": "/profile/haru",
     "sample": "social",
-    "no": "27",
+    "no": "31",
     "shots": {
-      "light": "27-profile-following-light.png",
-      "dark": "27-profile-following-dark.png"
+      "light": "31-profile-following-light.png",
+      "dark": "31-profile-following-dark.png"
     },
     "info": {
       "texts": [
@@ -2801,6 +3330,8 @@
         "フォロワー",
         "フォロー中",
         "フォロー中 ✓",
+        "ピン留め",
+        "ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。",
         "9マス",
         "好きな食べ物",
         "からあげ",
@@ -2846,7 +3377,151 @@
         {
           "label": "フォロー中 ✓",
           "role": "button",
-          "w": 358,
+          "w": 175,
+          "h": 44
+        },
+        {
+          "label": "ピン留め",
+          "role": "button",
+          "w": 175,
+          "h": 44
+        },
+        {
+          "label": "投稿",
+          "role": "tab",
+          "w": 195,
+          "h": 44
+        },
+        {
+          "label": "カレンダー",
+          "role": "tab",
+          "w": 195,
+          "h": 44
+        },
+        {
+          "label": "10.18",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.16",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.15",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.13",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.12",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.09",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.06",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        }
+      ]
+    }
+  },
+  {
+    "id": "profile-pinned",
+    "title": "友達のプロフィール（ピン留め中）",
+    "path": "/profile/haru",
+    "sample": "social",
+    "local": {
+      "pins": [
+        "sample-haru"
+      ]
+    },
+    "no": "32",
+    "shots": {
+      "light": "32-profile-pinned-light.png",
+      "dark": "32-profile-pinned-dark.png"
+    },
+    "info": {
+      "texts": [
+        "@haru",
+        "ハ",
+        "ハル",
+        "誕生日 3月14日",
+        "写真は下手だけど、毎日撮ってます。",
+        "フォロワー",
+        "フォロー中",
+        "フォロー中 ✓",
+        "ピン留めを外す",
+        "ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。",
+        "9マス",
+        "好きな食べ物",
+        "からあげ",
+        "よく行く場所",
+        "図書館",
+        "最近のこと",
+        "自転車をなおした",
+        "好きな音",
+        "雨",
+        "朝のおとも",
+        "ココア",
+        "集めているもの",
+        "ボタン",
+        "投稿",
+        "カレンダー",
+        "10.18",
+        "10.16",
+        "10.15",
+        "10.13",
+        "10.12",
+        "10.09",
+        "10.06"
+      ],
+      "buttons": [
+        {
+          "label": "← 戻る",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "フォロワー",
+          "role": "link",
+          "w": 65,
+          "h": 44
+        },
+        {
+          "label": "フォロー中",
+          "role": "link",
+          "w": 65,
+          "h": 44
+        },
+        {
+          "label": "フォロー中 ✓",
+          "role": "button",
+          "w": 175,
+          "h": 44
+        },
+        {
+          "label": "ピン留めを外す",
+          "role": "button",
+          "w": 175,
           "h": 44
         },
         {
@@ -2912,10 +3587,10 @@
     "path": "/profile/haru",
     "sample": "social",
     "click": "カレンダー",
-    "no": "28",
+    "no": "33",
     "shots": {
-      "light": "28-profile-calendar-light.png",
-      "dark": "28-profile-calendar-dark.png"
+      "light": "33-profile-calendar-light.png",
+      "dark": "33-profile-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -2927,6 +3602,8 @@
         "フォロワー",
         "フォロー中",
         "フォロー中 ✓",
+        "ピン留め",
+        "ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。",
         "9マス",
         "好きな食べ物",
         "からあげ",
@@ -3007,7 +3684,13 @@
         {
           "label": "フォロー中 ✓",
           "role": "button",
-          "w": 358,
+          "w": 175,
+          "h": 44
+        },
+        {
+          "label": "ピン留め",
+          "role": "button",
+          "w": 175,
           "h": 44
         },
         {
@@ -3084,10 +3767,10 @@
     "title": "フォロー中の一覧",
     "path": "/people?kind=following",
     "sample": "social",
-    "no": "29",
+    "no": "34",
     "shots": {
-      "light": "29-following-light.png",
-      "dark": "29-following-dark.png"
+      "light": "34-following-light.png",
+      "dark": "34-following-dark.png"
     },
     "info": {
       "texts": [
@@ -3144,10 +3827,10 @@
     "title": "承認待ち",
     "path": "/requests",
     "sample": "social",
-    "no": "30",
+    "no": "35",
     "shots": {
-      "light": "30-requests-light.png",
-      "dark": "30-requests-dark.png"
+      "light": "35-requests-light.png",
+      "dark": "35-requests-dark.png"
     },
     "info": {
       "texts": [
@@ -3186,10 +3869,10 @@
     "title": "設定",
     "path": "/settings",
     "sample": "social",
-    "no": "31",
+    "no": "36",
     "shots": {
-      "light": "31-settings-light.png",
-      "dark": "31-settings-dark.png"
+      "light": "36-settings-light.png",
+      "dark": "36-settings-dark.png"
     },
     "info": {
       "texts": [
@@ -3197,6 +3880,8 @@
         "アカウント",
         "鍵をかける",
         "承認した人だけ、あなたを見られます。",
+        "リマインド",
+        "お題が届いて3時間たっても撮っていないとき、1回だけ知らせます。夜10時すぎは送りません。",
         "利用規約",
         "→",
         "プライバシー",
@@ -3211,6 +3896,12 @@
         },
         {
           "label": "鍵をかける",
+          "role": "switch",
+          "w": 64,
+          "h": 44
+        },
+        {
+          "label": "リマインド",
           "role": "switch",
           "w": 64,
           "h": 44
@@ -3241,10 +3932,10 @@
     "title": "友達を呼ぶ",
     "path": "/setup/invite",
     "sample": "social",
-    "no": "32",
+    "no": "37",
     "shots": {
-      "light": "32-invite-light.png",
-      "dark": "32-invite-dark.png"
+      "light": "37-invite-light.png",
+      "dark": "37-invite-dark.png"
     },
     "info": {
       "texts": [
@@ -3282,10 +3973,10 @@
     "title": "利用規約（仮）",
     "path": "/legal?kind=terms",
     "sample": "social",
-    "no": "33",
+    "no": "38",
     "shots": {
-      "light": "33-legal-terms-light.png",
-      "dark": "33-legal-terms-dark.png"
+      "light": "38-legal-terms-light.png",
+      "dark": "38-legal-terms-dark.png"
     },
     "info": {
       "texts": [
