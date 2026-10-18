@@ -691,10 +691,10 @@
         "おだい",
         "並べる",
         "流す",
-        "次のお題は、きょうのどこかで届きます",
         "10.17 のお題",
         "窓のそとの色",
-        "10.17 のならび",
+        "次のお題は、きょうのどこかで届きます",
+        "ならび",
         "友達になった順",
         "もう出しました",
         "ユ",
@@ -801,10 +801,10 @@
         "おだい",
         "並べる",
         "流す",
-        "次のお題は、きょうのどこかで届きます",
         "10.17 のお題",
         "窓のそとの色",
-        "10.17 のならび",
+        "次のお題は、きょうのどこかで届きます",
+        "ならび",
         "友達になった順",
         "もう出しました",
         "ユ",
@@ -932,10 +932,10 @@
         "おだい",
         "並べる",
         "流す",
-        "次のお題は、きょうのどこかで届きます",
         "10.17 のお題",
         "窓のそとの色",
-        "10.17 のならび",
+        "次のお題は、きょうのどこかで届きます",
+        "ならび",
         "友達になった順",
         "撮る",
         "撮ると、みんなのが見られます。",
@@ -1002,6 +1002,194 @@
     }
   },
   {
+    "id": "today-prevnonext",
+    "title": "きょう（お題が届く前・次のお題が未登録）",
+    "path": "/home",
+    "sample": "prevnonext",
+    "no": "11",
+    "shots": {
+      "light": "11-today-prevnonext-light.png",
+      "dark": "11-today-prevnonext-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "並べる",
+        "流す",
+        "10.17 のお題",
+        "窓のそとの色",
+        "ならび",
+        "友達になった順",
+        "撮る",
+        "撮ると、みんなのが見られます。",
+        "ハ",
+        "ハル",
+        "ミ",
+        "ミナト",
+        "ソ",
+        "ソラ",
+        "きょう",
+        "さがす",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "並べる",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "流す",
+          "role": "button",
+          "w": 56,
+          "h": 44
+        },
+        {
+          "label": "撮る 撮ると、みんなのが見られます。",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        }
+      ]
+    }
+  },
+  {
+    "id": "today-rejected",
+    "title": "きょう（撮っている間に次のお題が届いて、写真が出せなかった）",
+    "path": "/home",
+    "sample": "prevbefore",
+    "steps": [
+      {
+        "reject": true,
+        "wait": 800
+      }
+    ],
+    "no": "12",
+    "shots": {
+      "light": "12-today-rejected-light.png",
+      "dark": "12-today-rejected-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "並べる",
+        "流す",
+        "次のお題が届いたので、この写真は出せませんでした",
+        "写真を保存する",
+        "とじる（写真は消えます）",
+        "10.17 のお題",
+        "窓のそとの色",
+        "次のお題は、きょうのどこかで届きます",
+        "ならび",
+        "友達になった順",
+        "撮る",
+        "撮ると、みんなのが見られます。",
+        "ハ",
+        "ハル",
+        "ミ",
+        "ミナト",
+        "ソ",
+        "ソラ",
+        "きょう",
+        "さがす",
+        "わたし"
+      ],
+      "buttons": [
+        {
+          "label": "フォローリクエスト",
+          "role": "button",
+          "w": 44,
+          "h": 44
+        },
+        {
+          "label": "並べる",
+          "role": "button",
+          "w": 58,
+          "h": 44
+        },
+        {
+          "label": "流す",
+          "role": "button",
+          "w": 56,
+          "h": 44
+        },
+        {
+          "label": "写真を保存する",
+          "role": "button",
+          "w": 125,
+          "h": 44
+        },
+        {
+          "label": "とじる（写真は消えます）",
+          "role": "button",
+          "w": 188,
+          "h": 44
+        },
+        {
+          "label": "撮る 撮ると、みんなのが見られます。",
+          "role": "div",
+          "w": 185,
+          "h": 232
+        },
+        {
+          "label": "きょう",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "さがす",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "撮る",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        },
+        {
+          "label": "わたし",
+          "role": "tab",
+          "w": 98,
+          "h": 51
+        }
+      ]
+    }
+  },
+  {
     "id": "today-prevbefore-feed",
     "title": "きょう（お題が届く前・前のお題を撮る前・流す）",
     "path": "/home",
@@ -1011,20 +1199,20 @@
         "click": "流す"
       }
     ],
-    "no": "11",
+    "no": "13",
     "shots": {
-      "light": "11-today-prevbefore-feed-light.png",
-      "dark": "11-today-prevbefore-feed-dark.png"
+      "light": "13-today-prevbefore-feed-light.png",
+      "dark": "13-today-prevbefore-feed-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "次のお題は、きょうのどこかで届きます",
         "10.17 のお題",
         "窓のそとの色",
-        "10.17 のならび",
+        "次のお題は、きょうのどこかで届きます",
+        "ならび",
         "友達になった順",
         "撮る",
         "撮ると、みんなのが見られます。",
@@ -1114,10 +1302,10 @@
     "title": "きょう（誰も撮っていない）",
     "path": "/home",
     "sample": "nobody",
-    "no": "12",
+    "no": "14",
     "shots": {
-      "light": "12-today-nobody-light.png",
-      "dark": "12-today-nobody-dark.png"
+      "light": "14-today-nobody-light.png",
+      "dark": "14-today-nobody-dark.png"
     },
     "info": {
       "texts": [
@@ -1193,10 +1381,10 @@
     "title": "きょう（友達0人）",
     "path": "/home",
     "sample": "zero",
-    "no": "13",
+    "no": "15",
     "shots": {
-      "light": "13-today-zero-light.png",
-      "dark": "13-today-zero-dark.png"
+      "light": "15-today-zero-light.png",
+      "dark": "15-today-zero-dark.png"
     },
     "info": {
       "texts": [
@@ -1300,10 +1488,10 @@
         "click": "流す"
       }
     ],
-    "no": "14",
+    "no": "16",
     "shots": {
-      "light": "14-today-zero-feed-light.png",
-      "dark": "14-today-zero-feed-dark.png"
+      "light": "16-today-zero-feed-light.png",
+      "dark": "16-today-zero-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -1399,10 +1587,10 @@
     "title": "きょう（友達0人・撮った後）",
     "path": "/home",
     "sample": "zeroposted",
-    "no": "15",
+    "no": "17",
     "shots": {
-      "light": "15-today-zero-posted-light.png",
-      "dark": "15-today-zero-posted-dark.png"
+      "light": "17-today-zero-posted-light.png",
+      "dark": "17-today-zero-posted-dark.png"
     },
     "info": {
       "texts": [
@@ -1500,10 +1688,10 @@
     "title": "大きく見る（友達の写真・ハート・絵文字・コメント）",
     "path": "/viewer?userId=sample-haru&date=2026-10-18",
     "sample": "social",
-    "no": "16",
+    "no": "18",
     "shots": {
-      "light": "16-viewer-light.png",
-      "dark": "16-viewer-dark.png"
+      "light": "18-viewer-light.png",
+      "dark": "18-viewer-dark.png"
     },
     "info": {
       "texts": [
@@ -1622,10 +1810,10 @@
         "wait": 220
       }
     ],
-    "no": "17",
+    "no": "19",
     "shots": {
-      "light": "17-viewer-burst-light.png",
-      "dark": "17-viewer-burst-dark.png"
+      "light": "19-viewer-burst-light.png",
+      "dark": "19-viewer-burst-dark.png"
     },
     "info": {
       "texts": [
@@ -1734,10 +1922,10 @@
     "title": "大きく見る（自分の写真・押した人の一覧）",
     "path": "/viewer?userId=sample-me&date=2026-10-18",
     "sample": "social",
-    "no": "18",
+    "no": "20",
     "shots": {
-      "light": "18-viewer-own-light.png",
-      "dark": "18-viewer-own-dark.png"
+      "light": "20-viewer-own-light.png",
+      "dark": "20-viewer-own-dark.png"
     },
     "info": {
       "texts": [
@@ -1792,10 +1980,10 @@
     "title": "さがす",
     "path": "/suggest",
     "sample": "social",
-    "no": "19",
+    "no": "21",
     "shots": {
-      "light": "19-search-light.png",
-      "dark": "19-search-dark.png"
+      "light": "21-search-light.png",
+      "dark": "21-search-dark.png"
     },
     "info": {
       "texts": [
@@ -1914,10 +2102,10 @@
     "title": "わたし",
     "path": "/me",
     "sample": "social",
-    "no": "20",
+    "no": "22",
     "shots": {
-      "light": "20-me-light.png",
-      "dark": "20-me-dark.png"
+      "light": "22-me-light.png",
+      "dark": "22-me-dark.png"
     },
     "info": {
       "texts": [
@@ -2082,10 +2270,10 @@
     "path": "/me",
     "sample": "social",
     "click": "カレンダー",
-    "no": "21",
+    "no": "23",
     "shots": {
-      "light": "21-me-calendar-light.png",
-      "dark": "21-me-calendar-dark.png"
+      "light": "23-me-calendar-light.png",
+      "dark": "23-me-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -2295,10 +2483,10 @@
     "title": "プロフィールを編集",
     "path": "/edit-profile",
     "sample": "social",
-    "no": "22",
+    "no": "24",
     "shots": {
-      "light": "22-edit-profile-light.png",
-      "dark": "22-edit-profile-dark.png"
+      "light": "24-edit-profile-light.png",
+      "dark": "24-edit-profile-dark.png"
     },
     "info": {
       "texts": [
@@ -2514,10 +2702,10 @@
     "title": "プロフィールを共有",
     "path": "/share",
     "sample": "social",
-    "no": "23",
+    "no": "25",
     "shots": {
-      "light": "23-share-light.png",
-      "dark": "23-share-dark.png"
+      "light": "25-share-light.png",
+      "dark": "25-share-dark.png"
     },
     "info": {
       "texts": [
@@ -2563,10 +2751,10 @@
     "title": "友達のプロフィール（鍵あり・未フォロー）",
     "path": "/profile/ren",
     "sample": "social",
-    "no": "24",
+    "no": "26",
     "shots": {
-      "light": "24-profile-locked-light.png",
-      "dark": "24-profile-locked-dark.png"
+      "light": "26-profile-locked-light.png",
+      "dark": "26-profile-locked-dark.png"
     },
     "info": {
       "texts": [
@@ -2598,10 +2786,10 @@
     "title": "友達のプロフィール（フォロー中）",
     "path": "/profile/haru",
     "sample": "social",
-    "no": "25",
+    "no": "27",
     "shots": {
-      "light": "25-profile-following-light.png",
-      "dark": "25-profile-following-dark.png"
+      "light": "27-profile-following-light.png",
+      "dark": "27-profile-following-dark.png"
     },
     "info": {
       "texts": [
@@ -2724,10 +2912,10 @@
     "path": "/profile/haru",
     "sample": "social",
     "click": "カレンダー",
-    "no": "26",
+    "no": "28",
     "shots": {
-      "light": "26-profile-calendar-light.png",
-      "dark": "26-profile-calendar-dark.png"
+      "light": "28-profile-calendar-light.png",
+      "dark": "28-profile-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -2896,10 +3084,10 @@
     "title": "フォロー中の一覧",
     "path": "/people?kind=following",
     "sample": "social",
-    "no": "27",
+    "no": "29",
     "shots": {
-      "light": "27-following-light.png",
-      "dark": "27-following-dark.png"
+      "light": "29-following-light.png",
+      "dark": "29-following-dark.png"
     },
     "info": {
       "texts": [
@@ -2956,10 +3144,10 @@
     "title": "承認待ち",
     "path": "/requests",
     "sample": "social",
-    "no": "28",
+    "no": "30",
     "shots": {
-      "light": "28-requests-light.png",
-      "dark": "28-requests-dark.png"
+      "light": "30-requests-light.png",
+      "dark": "30-requests-dark.png"
     },
     "info": {
       "texts": [
@@ -2998,10 +3186,10 @@
     "title": "設定",
     "path": "/settings",
     "sample": "social",
-    "no": "29",
+    "no": "31",
     "shots": {
-      "light": "29-settings-light.png",
-      "dark": "29-settings-dark.png"
+      "light": "31-settings-light.png",
+      "dark": "31-settings-dark.png"
     },
     "info": {
       "texts": [
@@ -3053,10 +3241,10 @@
     "title": "友達を呼ぶ",
     "path": "/setup/invite",
     "sample": "social",
-    "no": "30",
+    "no": "32",
     "shots": {
-      "light": "30-invite-light.png",
-      "dark": "30-invite-dark.png"
+      "light": "32-invite-light.png",
+      "dark": "32-invite-dark.png"
     },
     "info": {
       "texts": [
@@ -3094,10 +3282,10 @@
     "title": "利用規約（仮）",
     "path": "/legal?kind=terms",
     "sample": "social",
-    "no": "31",
+    "no": "33",
     "shots": {
-      "light": "31-legal-terms-light.png",
-      "dark": "31-legal-terms-dark.png"
+      "light": "33-legal-terms-light.png",
+      "dark": "33-legal-terms-dark.png"
     },
     "info": {
       "texts": [
