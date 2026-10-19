@@ -14,6 +14,158 @@
         "おだい",
         "同じお題で、撮って、並べる。",
         "たとえば「いま、足もとにあるもの。」",
+        "ユイ",
+        "ハル",
+        "ミナト",
+        "ソラ",
+        "はじめる",
+        "続けると、",
+        "利用規約",
+        "プライバシー",
+        "に同意したことになります。"
+      ],
+      "buttons": [
+        {
+          "label": "はじめる",
+          "role": "div",
+          "w": 342,
+          "h": 56
+        },
+        {
+          "label": "利用規約",
+          "role": "link",
+          "w": 48,
+          "h": 44
+        },
+        {
+          "label": "プライバシー",
+          "role": "link",
+          "w": 70,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "welcome-blur",
+    "title": "入口（開いた直後・見本の写真はぼかし）",
+    "path": "/",
+    "sample": "welcome",
+    "settle": 0,
+    "no": "02",
+    "shots": {
+      "light": "02-welcome-blur-light.png",
+      "dark": "02-welcome-blur-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "同じお題で、撮って、並べる。",
+        "たとえば「いま、足もとにあるもの。」",
+        "ユイ",
+        "ハル",
+        "ミナト",
+        "ソラ",
+        "はじめる",
+        "続けると、",
+        "利用規約",
+        "プライバシー",
+        "に同意したことになります。"
+      ],
+      "buttons": [
+        {
+          "label": "はじめる",
+          "role": "div",
+          "w": 342,
+          "h": 56
+        },
+        {
+          "label": "利用規約",
+          "role": "link",
+          "w": 48,
+          "h": 44
+        },
+        {
+          "label": "プライバシー",
+          "role": "link",
+          "w": 70,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "welcome-small",
+    "title": "入口（小さい画面 375×667・枠は低くなって収まる）",
+    "path": "/",
+    "sample": "welcome",
+    "viewport": {
+      "width": 375,
+      "height": 667
+    },
+    "no": "03",
+    "shots": {
+      "light": "03-welcome-small-light.png",
+      "dark": "03-welcome-small-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "同じお題で、撮って、並べる。",
+        "たとえば「いま、足もとにあるもの。」",
+        "ユイ",
+        "ハル",
+        "ミナト",
+        "ソラ",
+        "はじめる",
+        "続けると、",
+        "利用規約",
+        "プライバシー",
+        "に同意したことになります。"
+      ],
+      "buttons": [
+        {
+          "label": "はじめる",
+          "role": "div",
+          "w": 327,
+          "h": 56
+        },
+        {
+          "label": "利用規約",
+          "role": "link",
+          "w": 48,
+          "h": 44
+        },
+        {
+          "label": "プライバシー",
+          "role": "link",
+          "w": 70,
+          "h": 44
+        }
+      ]
+    }
+  },
+  {
+    "id": "welcome-reduce",
+    "title": "入口（動きを減らす設定・最初から見える）",
+    "path": "/",
+    "sample": "welcome",
+    "reduceMotion": true,
+    "settle": 400,
+    "no": "04",
+    "shots": {
+      "light": "04-welcome-reduce-light.png",
+      "dark": "04-welcome-reduce-dark.png"
+    },
+    "info": {
+      "texts": [
+        "おだい",
+        "同じお題で、撮って、並べる。",
+        "たとえば「いま、足もとにあるもの。」",
+        "ユイ",
+        "ハル",
+        "ミナト",
+        "ソラ",
         "はじめる",
         "続けると、",
         "利用規約",
@@ -47,10 +199,10 @@
     "title": "プロフィール作成",
     "path": "/setup/profile",
     "sample": "setup",
-    "no": "02",
+    "no": "05",
     "shots": {
-      "light": "02-profile-setup-light.png",
-      "dark": "02-profile-setup-dark.png"
+      "light": "05-profile-setup-light.png",
+      "dark": "05-profile-setup-dark.png"
     },
     "info": {
       "texts": [
@@ -112,10 +264,10 @@
     "title": "きょう（撮る前・ぼかし）",
     "path": "/home",
     "sample": "before",
-    "no": "03",
+    "no": "06",
     "shots": {
-      "light": "03-today-before-light.png",
-      "dark": "03-today-before-dark.png"
+      "light": "06-today-before-light.png",
+      "dark": "06-today-before-dark.png"
     },
     "info": {
       "texts": [
@@ -123,7 +275,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "ナツキ・ミナトほかが撮りました",
@@ -202,10 +354,10 @@
     "title": "きょう（撮った後・ならび）",
     "path": "/home",
     "sample": "after",
-    "no": "04",
+    "no": "07",
     "shots": {
-      "light": "04-today-after-light.png",
-      "dark": "04-today-after-dark.png"
+      "light": "07-today-after-light.png",
+      "dark": "07-today-after-dark.png"
     },
     "info": {
       "texts": [
@@ -213,7 +365,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "まだ見ていない写真から",
@@ -314,15 +466,15 @@
     "sample": "after",
     "local": {
       "seen": {
-        "2026-10-18": [
+        "2026-10-19": [
           "sample-natsuki"
         ]
       }
     },
-    "no": "05",
+    "no": "08",
     "shots": {
-      "light": "05-today-after-seen-light.png",
-      "dark": "05-today-after-seen-dark.png"
+      "light": "08-today-after-seen-light.png",
+      "dark": "08-today-after-seen-dark.png"
     },
     "info": {
       "texts": [
@@ -330,7 +482,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "まだ見ていない写真から",
@@ -431,7 +583,7 @@
     "sample": "after",
     "local": {
       "seen": {
-        "2026-10-18": [
+        "2026-10-19": [
           "sample-haru",
           "sample-minato",
           "sample-natsuki"
@@ -441,10 +593,10 @@
         "sample-haru"
       ]
     },
-    "no": "06",
+    "no": "09",
     "shots": {
-      "light": "06-today-after-pinned-light.png",
-      "dark": "06-today-after-pinned-dark.png"
+      "light": "09-today-after-pinned-light.png",
+      "dark": "09-today-after-pinned-dark.png"
     },
     "info": {
       "texts": [
@@ -452,7 +604,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "今日はもう出しました",
@@ -552,7 +704,7 @@
     "sample": "after",
     "local": {
       "seen": {
-        "2026-10-18": [
+        "2026-10-19": [
           "sample-natsuki"
         ]
       }
@@ -562,10 +714,10 @@
         "click": "流す"
       }
     ],
-    "no": "07",
+    "no": "10",
     "shots": {
-      "light": "07-today-after-feed-seen-light.png",
-      "dark": "07-today-after-feed-seen-dark.png"
+      "light": "10-today-after-feed-seen-light.png",
+      "dark": "10-today-after-feed-seen-dark.png"
     },
     "info": {
       "texts": [
@@ -573,7 +725,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "まだ見ていない写真から",
@@ -698,23 +850,23 @@
     "title": "お知らせ（自分の写真への反応・直近7日）",
     "path": "/activity",
     "sample": "social",
-    "no": "08",
+    "no": "11",
     "shots": {
-      "light": "08-activity-light.png",
-      "dark": "08-activity-dark.png"
+      "light": "11-activity-light.png",
+      "dark": "11-activity-dark.png"
     },
     "info": {
       "texts": [
         "お知らせ",
         "ナ",
         "ナツキが😮を送りました",
-        "30分前 · 10.18",
+        "30分前 · 10.19",
         "ミ",
         "ミナトがハートを送りました",
-        "40分前 · 10.18",
+        "40分前 · 10.19",
         "ハ",
         "ハルが😂を送りました",
-        "50分前 · 10.18",
+        "50分前 · 10.19",
         "直近7日分です。"
       ],
       "buttons": [
@@ -725,19 +877,19 @@
           "h": 44
         },
         {
-          "label": "ナ ナツキが😮を送りました 30分前 · 10.18",
+          "label": "ナ ナツキが😮を送りました 30分前 · 10.19",
           "role": "button",
           "w": 390,
           "h": 64
         },
         {
-          "label": "ミ ミナトがハートを送りました 40分前 · 10.18",
+          "label": "ミ ミナトがハートを送りました 40分前 · 10.19",
           "role": "button",
           "w": 390,
           "h": 64
         },
         {
-          "label": "ハ ハルが😂を送りました 50分前 · 10.18",
+          "label": "ハ ハルが😂を送りました 50分前 · 10.19",
           "role": "button",
           "w": 390,
           "h": 64
@@ -755,10 +907,10 @@
         "click": "流す"
       }
     ],
-    "no": "09",
+    "no": "12",
     "shots": {
-      "light": "09-today-before-feed-light.png",
-      "dark": "09-today-before-feed-dark.png"
+      "light": "12-today-before-feed-light.png",
+      "dark": "12-today-before-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -766,7 +918,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "ナツキ・ミナトほかが撮りました",
@@ -869,10 +1021,10 @@
         "click": "流す"
       }
     ],
-    "no": "10",
+    "no": "13",
     "shots": {
-      "light": "10-today-after-feed-light.png",
-      "dark": "10-today-after-feed-dark.png"
+      "light": "13-today-after-feed-light.png",
+      "dark": "13-today-after-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -880,7 +1032,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "まだ見ていない写真から",
@@ -1013,10 +1165,10 @@
         "scroll": "end"
       }
     ],
-    "no": "11",
+    "no": "14",
     "shots": {
-      "light": "11-today-feed-end-light.png",
-      "dark": "11-today-feed-end-dark.png"
+      "light": "14-today-feed-end-light.png",
+      "dark": "14-today-feed-end-dark.png"
     },
     "info": {
       "texts": [
@@ -1024,7 +1176,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "まだ見ていない写真から",
@@ -1149,17 +1301,17 @@
     "title": "きょう（お題が届く前・前のお題を撮った後）",
     "path": "/home",
     "sample": "waiting",
-    "no": "12",
+    "no": "15",
     "shots": {
-      "light": "12-today-waiting-light.png",
-      "dark": "12-today-waiting-dark.png"
+      "light": "15-today-waiting-light.png",
+      "dark": "15-today-waiting-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
@@ -1265,17 +1417,17 @@
         "click": "流す"
       }
     ],
-    "no": "13",
+    "no": "16",
     "shots": {
-      "light": "13-today-waiting-feed-light.png",
-      "dark": "13-today-waiting-feed-dark.png"
+      "light": "16-today-waiting-feed-light.png",
+      "dark": "16-today-waiting-feed-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
@@ -1402,17 +1554,17 @@
     "title": "きょう（お題が届く前・前のお題を撮る前）",
     "path": "/home",
     "sample": "prevbefore",
-    "no": "14",
+    "no": "17",
     "shots": {
-      "light": "14-today-prevbefore-light.png",
-      "dark": "14-today-prevbefore-dark.png"
+      "light": "17-today-prevbefore-light.png",
+      "dark": "17-today-prevbefore-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
@@ -1492,17 +1644,17 @@
     "title": "きょう（お題が届く前・次のお題が未登録）",
     "path": "/home",
     "sample": "prevnonext",
-    "no": "15",
+    "no": "18",
     "shots": {
-      "light": "15-today-prevnonext-light.png",
-      "dark": "15-today-prevnonext-dark.png"
+      "light": "18-today-prevnonext-light.png",
+      "dark": "18-today-prevnonext-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "ならび",
         "ミナト・ソラほかが撮りました",
@@ -1587,10 +1739,10 @@
         "wait": 800
       }
     ],
-    "no": "16",
+    "no": "19",
     "shots": {
-      "light": "16-today-rejected-light.png",
-      "dark": "16-today-rejected-dark.png"
+      "light": "19-today-rejected-light.png",
+      "dark": "19-today-rejected-dark.png"
     },
     "info": {
       "texts": [
@@ -1600,7 +1752,7 @@
         "次のお題が届いたので、この写真は出せませんでした",
         "写真を保存する",
         "とじる（写真は消えます）",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
@@ -1697,17 +1849,17 @@
         "click": "流す"
       }
     ],
-    "no": "17",
+    "no": "20",
     "shots": {
-      "light": "17-today-prevbefore-feed-light.png",
-      "dark": "17-today-prevbefore-feed-dark.png"
+      "light": "20-today-prevbefore-feed-light.png",
+      "dark": "20-today-prevbefore-feed-dark.png"
     },
     "info": {
       "texts": [
         "おだい",
         "並べる",
         "流す",
-        "10.17 のお題",
+        "10.18 のお題",
         "窓のそとの色",
         "次のお題は、きょうのどこかで届きます",
         "ならび",
@@ -1806,10 +1958,10 @@
     "title": "きょう（誰も撮っていない）",
     "path": "/home",
     "sample": "nobody",
-    "no": "18",
+    "no": "21",
     "shots": {
-      "light": "18-today-nobody-light.png",
-      "dark": "18-today-nobody-dark.png"
+      "light": "21-today-nobody-light.png",
+      "dark": "21-today-nobody-dark.png"
     },
     "info": {
       "texts": [
@@ -1817,7 +1969,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "撮る",
@@ -1890,10 +2042,10 @@
     "title": "きょう（友達0人）",
     "path": "/home",
     "sample": "zero",
-    "no": "19",
+    "no": "22",
     "shots": {
-      "light": "19-today-zero-light.png",
-      "dark": "19-today-zero-dark.png"
+      "light": "22-today-zero-light.png",
+      "dark": "22-today-zero-dark.png"
     },
     "info": {
       "texts": [
@@ -1901,7 +2053,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "あ",
         "あおい",
@@ -2003,10 +2155,10 @@
         "click": "流す"
       }
     ],
-    "no": "20",
+    "no": "23",
     "shots": {
-      "light": "20-today-zero-feed-light.png",
-      "dark": "20-today-zero-feed-dark.png"
+      "light": "23-today-zero-feed-light.png",
+      "dark": "23-today-zero-feed-dark.png"
     },
     "info": {
       "texts": [
@@ -2014,7 +2166,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "撮る",
         "撮ると、みんなのが見られます。",
@@ -2108,10 +2260,10 @@
     "title": "きょう（友達0人・撮った後）",
     "path": "/home",
     "sample": "zeroposted",
-    "no": "21",
+    "no": "24",
     "shots": {
-      "light": "21-today-zero-posted-light.png",
-      "dark": "21-today-zero-posted-dark.png"
+      "light": "24-today-zero-posted-light.png",
+      "dark": "24-today-zero-posted-dark.png"
     },
     "info": {
       "texts": [
@@ -2119,7 +2271,7 @@
         "並べる",
         "流す",
         "きょうのお題",
-        "10.18 日",
+        "10.19 月",
         "ふと目に入った、丸いもの",
         "きょうのならび",
         "今日はもう出しました",
@@ -2213,12 +2365,12 @@
   {
     "id": "viewer",
     "title": "大きく見る（友達の写真・ハート・絵文字・コメント）",
-    "path": "/viewer?userId=sample-haru&date=2026-10-18",
+    "path": "/viewer?userId=sample-haru&date=2026-10-19",
     "sample": "social",
-    "no": "22",
+    "no": "25",
     "shots": {
-      "light": "22-viewer-light.png",
-      "dark": "22-viewer-dark.png"
+      "light": "25-viewer-light.png",
+      "dark": "25-viewer-dark.png"
     },
     "info": {
       "texts": [
@@ -2325,7 +2477,7 @@
   {
     "id": "viewer-burst",
     "title": "大きく見る（ハートを押した直後・舞い上がる）",
-    "path": "/viewer?userId=sample-haru&date=2026-10-18",
+    "path": "/viewer?userId=sample-haru&date=2026-10-19",
     "sample": "social",
     "steps": [
       {
@@ -2337,10 +2489,10 @@
         "wait": 220
       }
     ],
-    "no": "23",
+    "no": "26",
     "shots": {
-      "light": "23-viewer-burst-light.png",
-      "dark": "23-viewer-burst-dark.png"
+      "light": "26-viewer-burst-light.png",
+      "dark": "26-viewer-burst-dark.png"
     },
     "info": {
       "texts": [
@@ -2447,12 +2599,12 @@
   {
     "id": "viewer-own",
     "title": "大きく見る（自分の写真・押した人の一覧）",
-    "path": "/viewer?userId=sample-me&date=2026-10-18",
+    "path": "/viewer?userId=sample-me&date=2026-10-19",
     "sample": "social",
-    "no": "24",
+    "no": "27",
     "shots": {
-      "light": "24-viewer-own-light.png",
-      "dark": "24-viewer-own-dark.png"
+      "light": "27-viewer-own-light.png",
+      "dark": "27-viewer-own-dark.png"
     },
     "info": {
       "texts": [
@@ -2507,10 +2659,10 @@
     "title": "さがす",
     "path": "/suggest",
     "sample": "social",
-    "no": "25",
+    "no": "28",
     "shots": {
-      "light": "25-search-light.png",
-      "dark": "25-search-dark.png"
+      "light": "28-search-light.png",
+      "dark": "28-search-dark.png"
     },
     "info": {
       "texts": [
@@ -2629,10 +2781,10 @@
     "title": "わたし",
     "path": "/me",
     "sample": "social",
-    "no": "26",
+    "no": "29",
     "shots": {
-      "light": "26-me-light.png",
-      "dark": "26-me-dark.png"
+      "light": "29-me-light.png",
+      "dark": "29-me-dark.png"
     },
     "info": {
       "texts": [
@@ -2661,14 +2813,14 @@
         "ボタン",
         "投稿",
         "カレンダー",
-        "10.18",
+        "10.19",
         "ふと目に入った、丸いもの",
+        "10.17",
         "10.16",
-        "10.15",
+        "10.14",
         "10.13",
-        "10.12",
-        "10.09",
-        "10.06",
+        "10.10",
+        "10.07",
         "きょう",
         "さがす",
         "撮る",
@@ -2724,7 +2876,13 @@
           "h": 44
         },
         {
-          "label": "10.18 ふと目に入った、丸いもの",
+          "label": "10.19 ふと目に入った、丸いもの",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.17",
           "role": "div",
           "w": 128,
           "h": 168
@@ -2736,7 +2894,7 @@
           "h": 168
         },
         {
-          "label": "10.15",
+          "label": "10.14",
           "role": "div",
           "w": 128,
           "h": 168
@@ -2748,19 +2906,13 @@
           "h": 168
         },
         {
-          "label": "10.12",
+          "label": "10.10",
           "role": "div",
           "w": 128,
           "h": 168
         },
         {
-          "label": "10.09",
-          "role": "div",
-          "w": 128,
-          "h": 168
-        },
-        {
-          "label": "10.06",
+          "label": "10.07",
           "role": "div",
           "w": 128,
           "h": 168
@@ -2798,10 +2950,10 @@
     "path": "/me",
     "sample": "social",
     "click": "カレンダー",
-    "no": "27",
+    "no": "30",
     "shots": {
-      "light": "27-me-calendar-light.png",
-      "dark": "27-me-calendar-dark.png"
+      "light": "30-me-calendar-light.png",
+      "dark": "30-me-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -2939,19 +3091,13 @@
           "h": 44
         },
         {
-          "label": "6",
+          "label": "7",
           "role": "div",
           "w": 47,
           "h": 60
         },
         {
-          "label": "9",
-          "role": "div",
-          "w": 47,
-          "h": 60
-        },
-        {
-          "label": "12",
+          "label": "10",
           "role": "div",
           "w": 47,
           "h": 60
@@ -2963,7 +3109,7 @@
           "h": 60
         },
         {
-          "label": "15",
+          "label": "14",
           "role": "div",
           "w": 47,
           "h": 60
@@ -2975,7 +3121,13 @@
           "h": 60
         },
         {
-          "label": "18",
+          "label": "17",
+          "role": "div",
+          "w": 47,
+          "h": 60
+        },
+        {
+          "label": "19",
           "role": "div",
           "w": 47,
           "h": 60
@@ -3012,10 +3164,10 @@
     "title": "プロフィールを編集",
     "path": "/edit-profile",
     "sample": "social",
-    "no": "28",
+    "no": "31",
     "shots": {
-      "light": "28-edit-profile-light.png",
-      "dark": "28-edit-profile-dark.png"
+      "light": "31-edit-profile-light.png",
+      "dark": "31-edit-profile-dark.png"
     },
     "info": {
       "texts": [
@@ -3231,10 +3383,10 @@
     "title": "プロフィールを共有",
     "path": "/share",
     "sample": "social",
-    "no": "29",
+    "no": "32",
     "shots": {
-      "light": "29-share-light.png",
-      "dark": "29-share-dark.png"
+      "light": "32-share-light.png",
+      "dark": "32-share-dark.png"
     },
     "info": {
       "texts": [
@@ -3280,10 +3432,10 @@
     "title": "友達のプロフィール（鍵あり・未フォロー）",
     "path": "/profile/ren",
     "sample": "social",
-    "no": "30",
+    "no": "33",
     "shots": {
-      "light": "30-profile-locked-light.png",
-      "dark": "30-profile-locked-dark.png"
+      "light": "33-profile-locked-light.png",
+      "dark": "33-profile-locked-dark.png"
     },
     "info": {
       "texts": [
@@ -3315,10 +3467,10 @@
     "title": "友達のプロフィール（フォロー中）",
     "path": "/profile/haru",
     "sample": "social",
-    "no": "31",
+    "no": "34",
     "shots": {
-      "light": "31-profile-following-light.png",
-      "dark": "31-profile-following-dark.png"
+      "light": "34-profile-following-light.png",
+      "dark": "34-profile-following-dark.png"
     },
     "info": {
       "texts": [
@@ -3347,13 +3499,13 @@
         "ボタン",
         "投稿",
         "カレンダー",
-        "10.18",
+        "10.19",
+        "10.17",
         "10.16",
-        "10.15",
+        "10.14",
         "10.13",
-        "10.12",
-        "10.09",
-        "10.06"
+        "10.10",
+        "10.07"
       ],
       "buttons": [
         {
@@ -3399,7 +3551,13 @@
           "h": 44
         },
         {
-          "label": "10.18",
+          "label": "10.19",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.17",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3411,7 +3569,7 @@
           "h": 168
         },
         {
-          "label": "10.15",
+          "label": "10.14",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3423,19 +3581,13 @@
           "h": 168
         },
         {
-          "label": "10.12",
+          "label": "10.10",
           "role": "div",
           "w": 128,
           "h": 168
         },
         {
-          "label": "10.09",
-          "role": "div",
-          "w": 128,
-          "h": 168
-        },
-        {
-          "label": "10.06",
+          "label": "10.07",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3453,10 +3605,10 @@
         "sample-haru"
       ]
     },
-    "no": "32",
+    "no": "35",
     "shots": {
-      "light": "32-profile-pinned-light.png",
-      "dark": "32-profile-pinned-dark.png"
+      "light": "35-profile-pinned-light.png",
+      "dark": "35-profile-pinned-dark.png"
     },
     "info": {
       "texts": [
@@ -3485,13 +3637,13 @@
         "ボタン",
         "投稿",
         "カレンダー",
-        "10.18",
+        "10.19",
+        "10.17",
         "10.16",
-        "10.15",
+        "10.14",
         "10.13",
-        "10.12",
-        "10.09",
-        "10.06"
+        "10.10",
+        "10.07"
       ],
       "buttons": [
         {
@@ -3537,7 +3689,13 @@
           "h": 44
         },
         {
-          "label": "10.18",
+          "label": "10.19",
+          "role": "div",
+          "w": 128,
+          "h": 168
+        },
+        {
+          "label": "10.17",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3549,7 +3707,7 @@
           "h": 168
         },
         {
-          "label": "10.15",
+          "label": "10.14",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3561,19 +3719,13 @@
           "h": 168
         },
         {
-          "label": "10.12",
+          "label": "10.10",
           "role": "div",
           "w": 128,
           "h": 168
         },
         {
-          "label": "10.09",
-          "role": "div",
-          "w": 128,
-          "h": 168
-        },
-        {
-          "label": "10.06",
+          "label": "10.07",
           "role": "div",
           "w": 128,
           "h": 168
@@ -3587,10 +3739,10 @@
     "path": "/profile/haru",
     "sample": "social",
     "click": "カレンダー",
-    "no": "33",
+    "no": "36",
     "shots": {
-      "light": "33-profile-calendar-light.png",
-      "dark": "33-profile-calendar-dark.png"
+      "light": "36-profile-calendar-light.png",
+      "dark": "36-profile-calendar-dark.png"
     },
     "info": {
       "texts": [
@@ -3718,19 +3870,13 @@
           "h": 44
         },
         {
-          "label": "6",
+          "label": "7",
           "role": "div",
           "w": 47,
           "h": 60
         },
         {
-          "label": "9",
-          "role": "div",
-          "w": 47,
-          "h": 60
-        },
-        {
-          "label": "12",
+          "label": "10",
           "role": "div",
           "w": 47,
           "h": 60
@@ -3742,7 +3888,7 @@
           "h": 60
         },
         {
-          "label": "15",
+          "label": "14",
           "role": "div",
           "w": 47,
           "h": 60
@@ -3754,7 +3900,13 @@
           "h": 60
         },
         {
-          "label": "18",
+          "label": "17",
+          "role": "div",
+          "w": 47,
+          "h": 60
+        },
+        {
+          "label": "19",
           "role": "div",
           "w": 47,
           "h": 60
@@ -3767,10 +3919,10 @@
     "title": "フォロー中の一覧",
     "path": "/people?kind=following",
     "sample": "social",
-    "no": "34",
+    "no": "37",
     "shots": {
-      "light": "34-following-light.png",
-      "dark": "34-following-dark.png"
+      "light": "37-following-light.png",
+      "dark": "37-following-dark.png"
     },
     "info": {
       "texts": [
@@ -3827,10 +3979,10 @@
     "title": "承認待ち",
     "path": "/requests",
     "sample": "social",
-    "no": "35",
+    "no": "38",
     "shots": {
-      "light": "35-requests-light.png",
-      "dark": "35-requests-dark.png"
+      "light": "38-requests-light.png",
+      "dark": "38-requests-dark.png"
     },
     "info": {
       "texts": [
@@ -3869,10 +4021,10 @@
     "title": "設定",
     "path": "/settings",
     "sample": "social",
-    "no": "36",
+    "no": "39",
     "shots": {
-      "light": "36-settings-light.png",
-      "dark": "36-settings-dark.png"
+      "light": "39-settings-light.png",
+      "dark": "39-settings-dark.png"
     },
     "info": {
       "texts": [
@@ -3932,10 +4084,10 @@
     "title": "友達を呼ぶ",
     "path": "/setup/invite",
     "sample": "social",
-    "no": "37",
+    "no": "40",
     "shots": {
-      "light": "37-invite-light.png",
-      "dark": "37-invite-dark.png"
+      "light": "40-invite-light.png",
+      "dark": "40-invite-dark.png"
     },
     "info": {
       "texts": [
@@ -3973,10 +4125,10 @@
     "title": "利用規約（仮）",
     "path": "/legal?kind=terms",
     "sample": "social",
-    "no": "38",
+    "no": "41",
     "shots": {
-      "light": "38-legal-terms-light.png",
-      "dark": "38-legal-terms-dark.png"
+      "light": "41-legal-terms-light.png",
+      "dark": "41-legal-terms-dark.png"
     },
     "info": {
       "texts": [

@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>おだい 画面ギャラリー（見本）</title>
+<style>
+  body { margin: 0; font: 14px/1.7 -apple-system, "Hiragino Sans", sans-serif; color: #1e1c19; background: #f4f2ee; }
+  header, section { max-width: 920px; margin: 0 auto; padding: 24px 20px; }
+  header h1 { font-size: 20px; margin: 0 0 4px; }
+  header p { margin: 0 0 12px; color: #6b665e; }
+  .note { font-size: 12px; border-left: 3px solid #d9d5cc; padding-left: 10px; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
+  nav a { color: #1e1c19; }
+  section { border-top: 1px solid #d9d5cc; }
+  h2 { font-size: 17px; margin: 0; } h2 span { font: 12px monospace; color: #6b665e; margin-right: 6px; }
+  .meta { margin: 2px 0 12px; color: #6b665e; font: 12px monospace; }
+  .imgs { display: flex; gap: 16px; flex-wrap: wrap; }
+  figure { margin: 0; } figure img { display: block; height: auto; max-width: 100%; border: 1px solid #d9d5cc; }
+  figcaption { font-size: 12px; color: #6b665e; margin-top: 4px; }
+  details { margin-top: 12px; } summary { cursor: pointer; font-size: 13px; }
+  .lists { display: flex; gap: 24px; flex-wrap: wrap; } .lists > div { flex: 1 1 280px; }
+  h3 { font-size: 12px; margin: 10px 0 4px; color: #6b665e; }
+  ul { margin: 0; padding-left: 18px; font-size: 13px; } li span { color: #6b665e; font: 11px monospace; }
+  li.small, li.small span { color: #b3401f; }
+</style>
+</head>
+<body>
+<header>
+  <h1>おだい 画面ギャラリー</h1>
+  <p>見本データで撮った画面です。人・名前・写真はすべて架空で、本物のデータは使っていません。更新: 2026-10-19 09:29 JST</p>
+  <p class="note">これはスマホ用アプリをパソコンのブラウザで表示したものです。実機とは次のところが違います：下のタブの文字が切れて見える／設定のスイッチの色／文字のにじみ・ぼかし・動き・フォントの細部。見た目の最終判断は実機で行ってください。</p>
+  <nav><a href="#welcome">01 入口</a><a href="#welcome-blur">02 入口（開いた直後・見本の写真はぼかし）</a><a href="#welcome-small">03 入口（小さい画面 375×667・枠は低くなって収まる）</a><a href="#welcome-reduce">04 入口（動きを減らす設定・最初から見える）</a><a href="#profile-setup">05 プロフィール作成</a><a href="#today-before">06 きょう（撮る前・ぼかし）</a><a href="#today-after">07 きょう（撮った後・ならび）</a><a href="#today-after-seen">08 きょう（撮った後・ナツキを見たあと＝ナツキは後ろに下がり点が消える）</a><a href="#today-after-pinned">09 きょう（撮った後・全員見た・ハルをピン留め中＝ハルが先）</a><a href="#today-after-feed-seen">10 きょう（撮った後・流す・ナツキを見たあと）</a><a href="#activity">11 お知らせ（自分の写真への反応・直近7日）</a><a href="#today-before-feed">12 きょう（撮る前・流す）</a><a href="#today-after-feed">13 きょう（撮った後・流す）</a><a href="#today-feed-end">14 きょう（流す・いちばん下）</a><a href="#today-waiting">15 きょう（お題が届く前・前のお題を撮った後）</a><a href="#today-waiting-feed">16 きょう（お題が届く前・前のお題を撮った後・流す）</a><a href="#today-prevbefore">17 きょう（お題が届く前・前のお題を撮る前）</a><a href="#today-prevnonext">18 きょう（お題が届く前・次のお題が未登録）</a><a href="#today-rejected">19 きょう（撮っている間に次のお題が届いて、写真が出せなかった）</a><a href="#today-prevbefore-feed">20 きょう（お題が届く前・前のお題を撮る前・流す）</a><a href="#today-nobody">21 きょう（誰も撮っていない）</a><a href="#today-zero">22 きょう（友達0人）</a><a href="#today-zero-feed">23 きょう（友達0人・流す）</a><a href="#today-zero-posted">24 きょう（友達0人・撮った後）</a><a href="#viewer">25 大きく見る（友達の写真・ハート・絵文字・コメント）</a><a href="#viewer-burst">26 大きく見る（ハートを押した直後・舞い上がる）</a><a href="#viewer-own">27 大きく見る（自分の写真・押した人の一覧）</a><a href="#search">28 さがす</a><a href="#me">29 わたし</a><a href="#me-calendar">30 わたし（カレンダー）</a><a href="#edit-profile">31 プロフィールを編集</a><a href="#share">32 プロフィールを共有</a><a href="#profile-locked">33 友達のプロフィール（鍵あり・未フォロー）</a><a href="#profile-following">34 友達のプロフィール（フォロー中）</a><a href="#profile-pinned">35 友達のプロフィール（ピン留め中）</a><a href="#profile-calendar">36 友達のプロフィール（カレンダー）</a><a href="#following">37 フォロー中の一覧</a><a href="#requests">38 承認待ち</a><a href="#settings">39 設定</a><a href="#invite">40 友達を呼ぶ</a><a href="#legal-terms">41 利用規約（仮）</a></nav>
+</header>
+
+  <section id="welcome">
+    <h2><span>01</span> 入口</h2>
+    <p class="meta">/　／　見本: welcome</p>
+    <div class="imgs">
+      <figure><img src="01-welcome-light.png" width="390" loading="lazy" alt="入口（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="01-welcome-dark.png" width="390" loading="lazy" alt="入口（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>同じお題で、撮って、並べる。</li><li>たとえば「いま、足もとにあるもの。」</li><li>ユイ</li><li>ハル</li><li>ミナト</li><li>ソラ</li><li>はじめる</li><li>続けると、</li><li>利用規約</li><li>プライバシー</li><li>に同意したことになります。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>はじめる <span>342×56</span></li><li>利用規約 <span>48×44</span></li><li>プライバシー <span>70×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="welcome-blur">
+    <h2><span>02</span> 入口（開いた直後・見本の写真はぼかし）</h2>
+    <p class="meta">/　／　見本: welcome</p>
+    <div class="imgs">
+      <figure><img src="02-welcome-blur-light.png" width="390" loading="lazy" alt="入口（開いた直後・見本の写真はぼかし）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="02-welcome-blur-dark.png" width="390" loading="lazy" alt="入口（開いた直後・見本の写真はぼかし）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>同じお題で、撮って、並べる。</li><li>たとえば「いま、足もとにあるもの。」</li><li>ユイ</li><li>ハル</li><li>ミナト</li><li>ソラ</li><li>はじめる</li><li>続けると、</li><li>利用規約</li><li>プライバシー</li><li>に同意したことになります。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>はじめる <span>342×56</span></li><li>利用規約 <span>48×44</span></li><li>プライバシー <span>70×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="welcome-small">
+    <h2><span>03</span> 入口（小さい画面 375×667・枠は低くなって収まる）</h2>
+    <p class="meta">/　／　見本: welcome</p>
+    <div class="imgs">
+      <figure><img src="03-welcome-small-light.png" width="390" loading="lazy" alt="入口（小さい画面 375×667・枠は低くなって収まる）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="03-welcome-small-dark.png" width="390" loading="lazy" alt="入口（小さい画面 375×667・枠は低くなって収まる）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>同じお題で、撮って、並べる。</li><li>たとえば「いま、足もとにあるもの。」</li><li>ユイ</li><li>ハル</li><li>ミナト</li><li>ソラ</li><li>はじめる</li><li>続けると、</li><li>利用規約</li><li>プライバシー</li><li>に同意したことになります。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>はじめる <span>327×56</span></li><li>利用規約 <span>48×44</span></li><li>プライバシー <span>70×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="welcome-reduce">
+    <h2><span>04</span> 入口（動きを減らす設定・最初から見える）</h2>
+    <p class="meta">/　／　見本: welcome</p>
+    <div class="imgs">
+      <figure><img src="04-welcome-reduce-light.png" width="390" loading="lazy" alt="入口（動きを減らす設定・最初から見える）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="04-welcome-reduce-dark.png" width="390" loading="lazy" alt="入口（動きを減らす設定・最初から見える）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>同じお題で、撮って、並べる。</li><li>たとえば「いま、足もとにあるもの。」</li><li>ユイ</li><li>ハル</li><li>ミナト</li><li>ソラ</li><li>はじめる</li><li>続けると、</li><li>利用規約</li><li>プライバシー</li><li>に同意したことになります。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>はじめる <span>342×56</span></li><li>利用規約 <span>48×44</span></li><li>プライバシー <span>70×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="profile-setup">
+    <h2><span>05</span> プロフィール作成</h2>
+    <p class="meta">/setup/profile　／　見本: setup</p>
+    <div class="imgs">
+      <figure><img src="05-profile-setup-light.png" width="390" loading="lazy" alt="プロフィール作成（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="05-profile-setup-dark.png" width="390" loading="lazy" alt="プロフィール作成（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>1 / 2</li><li>あなたのこと</li><li>名前</li><li>@ユーザーID</li><li>誕生日</li><li>年</li><li>月</li><li>日</li><li>年齢の確認に使います。月日だけ、友達に見せることもできます（あとで変えられます）。</li><li>月日を友達に見せる</li><li>次へ</li><li>→</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>(名前なし) <span>342×44</span></li><li>例: taro_yamada <span>342×44</span></li><li>1993 <span>195×44</span></li><li>10 <span>195×44</span></li><li>25 <span>195×44</span></li><li>月日を友達に見せる <span>64×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-before">
+    <h2><span>06</span> きょう（撮る前・ぼかし）</h2>
+    <p class="meta">/home　／　見本: before</p>
+    <div class="imgs">
+      <figure><img src="06-today-before-light.png" width="390" loading="lazy" alt="きょう（撮る前・ぼかし）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="06-today-before-dark.png" width="390" loading="lazy" alt="きょう（撮る前・ぼかし）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>ナツキ・ミナトほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ナ</li><li>ナツキ</li><li>ミ</li><li>ミナト</li><li>ハ</li><li>ハル</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-after">
+    <h2><span>07</span> きょう（撮った後・ならび）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="07-today-after-light.png" width="390" loading="lazy" alt="きょう（撮った後・ならび）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="07-today-after-dark.png" width="390" loading="lazy" alt="きょう（撮った後・ならび）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>まだ見ていない写真から</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>ナツキ</li><li>ミナト</li><li>ハル</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイ <span>185×232</span></li><li>ナツキ、まだ見ていません <span>185×232</span></li><li>ミナト、まだ見ていません <span>185×232</span></li><li>ハル、まだ見ていません <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-after-seen">
+    <h2><span>08</span> きょう（撮った後・ナツキを見たあと＝ナツキは後ろに下がり点が消える）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="08-today-after-seen-light.png" width="390" loading="lazy" alt="きょう（撮った後・ナツキを見たあと＝ナツキは後ろに下がり点が消える）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="08-today-after-seen-dark.png" width="390" loading="lazy" alt="きょう（撮った後・ナツキを見たあと＝ナツキは後ろに下がり点が消える）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>まだ見ていない写真から</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>ミナト</li><li>ハル</li><li>ナツキ</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイ <span>185×232</span></li><li>ミナト、まだ見ていません <span>185×232</span></li><li>ハル、まだ見ていません <span>185×232</span></li><li>ナツキ <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-after-pinned">
+    <h2><span>09</span> きょう（撮った後・全員見た・ハルをピン留め中＝ハルが先）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="09-today-after-pinned-light.png" width="390" loading="lazy" alt="きょう（撮った後・全員見た・ハルをピン留め中＝ハルが先）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="09-today-after-pinned-dark.png" width="390" loading="lazy" alt="きょう（撮った後・全員見た・ハルをピン留め中＝ハルが先）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>ハル</li><li>ナツキ</li><li>ミナト</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイ <span>185×232</span></li><li>ハル <span>185×232</span></li><li>ナツキ <span>185×232</span></li><li>ミナト <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-after-feed-seen">
+    <h2><span>10</span> きょう（撮った後・流す・ナツキを見たあと）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="10-today-after-feed-seen-light.png" width="390" loading="lazy" alt="きょう（撮った後・流す・ナツキを見たあと）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="10-today-after-feed-seen-dark.png" width="390" loading="lazy" alt="きょう（撮った後・流す・ナツキを見たあと）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>まだ見ていない写真から</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>反応・コメント</li><li>ミナト</li><li>ハル</li><li>ナツキ</li><li>今日はここまで</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ミナトさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ハルさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ナツキさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="activity">
+    <h2><span>11</span> お知らせ（自分の写真への反応・直近7日）</h2>
+    <p class="meta">/activity　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="11-activity-light.png" width="390" loading="lazy" alt="お知らせ（自分の写真への反応・直近7日）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="11-activity-dark.png" width="390" loading="lazy" alt="お知らせ（自分の写真への反応・直近7日）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>お知らせ</li><li>ナ</li><li>ナツキが😮を送りました</li><li>30分前 · 10.19</li><li>ミ</li><li>ミナトがハートを送りました</li><li>40分前 · 10.19</li><li>ハ</li><li>ハルが😂を送りました</li><li>50分前 · 10.19</li><li>直近7日分です。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>ナ ナツキが😮を送りました 30分前 · 10.19 <span>390×64</span></li><li>ミ ミナトがハートを送りました 40分前 · 10.19 <span>390×64</span></li><li>ハ ハルが😂を送りました 50分前 · 10.19 <span>390×64</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-before-feed">
+    <h2><span>12</span> きょう（撮る前・流す）</h2>
+    <p class="meta">/home　／　見本: before</p>
+    <div class="imgs">
+      <figure><img src="12-today-before-feed-light.png" width="390" loading="lazy" alt="きょう（撮る前・流す）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="12-today-before-feed-dark.png" width="390" loading="lazy" alt="きょう（撮る前・流す）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>ナツキ・ミナトほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ナ</li><li>ナツキ</li><li>ミ</li><li>ミナト</li><li>ハ</li><li>ハル</li><li>今日はここまで</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>358×200</span></li><li>ナツキ <span>390×488</span></li><li>ミナト <span>390×488</span></li><li>ハル <span>390×488</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-after-feed">
+    <h2><span>13</span> きょう（撮った後・流す）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="13-today-after-feed-light.png" width="390" loading="lazy" alt="きょう（撮った後・流す）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="13-today-after-feed-dark.png" width="390" loading="lazy" alt="きょう（撮った後・流す）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>まだ見ていない写真から</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>反応・コメント</li><li>ナツキ</li><li>ミナト</li><li>ハル</li><li>今日はここまで</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ナツキさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ミナトさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ハルさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-feed-end">
+    <h2><span>14</span> きょう（流す・いちばん下）</h2>
+    <p class="meta">/home　／　見本: after</p>
+    <div class="imgs">
+      <figure><img src="14-today-feed-end-light.png" width="390" loading="lazy" alt="きょう（流す・いちばん下）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="14-today-feed-end-dark.png" width="390" loading="lazy" alt="きょう（流す・いちばん下）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>まだ見ていない写真から</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>反応・コメント</li><li>ナツキ</li><li>ミナト</li><li>ハル</li><li>今日はここまで</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ナツキさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ミナトさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ハルさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-waiting">
+    <h2><span>15</span> きょう（お題が届く前・前のお題を撮った後）</h2>
+    <p class="meta">/home　／　見本: waiting</p>
+    <div class="imgs">
+      <figure><img src="15-today-waiting-light.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮った後）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="15-today-waiting-dark.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮った後）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>10.18 のお題</li><li>窓のそとの色</li><li>次のお題は、きょうのどこかで届きます</li><li>ならび</li><li>まだ見ていない写真から</li><li>もう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>ソ</li><li>ソラ</li><li>ミナト</li><li>ハル</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイ <span>185×232</span></li><li>ソラ、まだ見ていません <span>185×232</span></li><li>ミナト、まだ見ていません <span>185×232</span></li><li>ハル、まだ見ていません <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-waiting-feed">
+    <h2><span>16</span> きょう（お題が届く前・前のお題を撮った後・流す）</h2>
+    <p class="meta">/home　／　見本: waiting</p>
+    <div class="imgs">
+      <figure><img src="16-today-waiting-feed-light.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮った後・流す）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="16-today-waiting-feed-dark.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮った後・流す）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>10.18 のお題</li><li>窓のそとの色</li><li>次のお題は、きょうのどこかで届きます</li><li>ならび</li><li>まだ見ていない写真から</li><li>もう出しました</li><li>ユ</li><li>ユイ</li><li>ハ</li><li>ミ</li><li>ナ</li><li>反応・コメント</li><li>ソ</li><li>ソラ</li><li>ミナト</li><li>ハル</li><li>ここまで</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>新しいお知らせがあります <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ソラさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ミナトさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>ハルさんの写真を大きく見る <span>390×488</span></li><li>反応・コメント <span>390×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-prevbefore">
+    <h2><span>17</span> きょう（お題が届く前・前のお題を撮る前）</h2>
+    <p class="meta">/home　／　見本: prevbefore</p>
+    <div class="imgs">
+      <figure><img src="17-today-prevbefore-light.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮る前）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="17-today-prevbefore-dark.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮る前）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>10.18 のお題</li><li>窓のそとの色</li><li>次のお題は、きょうのどこかで届きます</li><li>ならび</li><li>ミナト・ソラほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ミ</li><li>ミナト</li><li>ソ</li><li>ソラ</li><li>ハ</li><li>ハル</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-prevnonext">
+    <h2><span>18</span> きょう（お題が届く前・次のお題が未登録）</h2>
+    <p class="meta">/home　／　見本: prevnonext</p>
+    <div class="imgs">
+      <figure><img src="18-today-prevnonext-light.png" width="390" loading="lazy" alt="きょう（お題が届く前・次のお題が未登録）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="18-today-prevnonext-dark.png" width="390" loading="lazy" alt="きょう（お題が届く前・次のお題が未登録）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>10.18 のお題</li><li>窓のそとの色</li><li>ならび</li><li>ミナト・ソラほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ミ</li><li>ミナト</li><li>ソ</li><li>ソラ</li><li>ハ</li><li>ハル</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-rejected">
+    <h2><span>19</span> きょう（撮っている間に次のお題が届いて、写真が出せなかった）</h2>
+    <p class="meta">/home　／　見本: prevbefore</p>
+    <div class="imgs">
+      <figure><img src="19-today-rejected-light.png" width="390" loading="lazy" alt="きょう（撮っている間に次のお題が届いて、写真が出せなかった）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="19-today-rejected-dark.png" width="390" loading="lazy" alt="きょう（撮っている間に次のお題が届いて、写真が出せなかった）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>次のお題が届いたので、この写真は出せませんでした</li><li>写真を保存する</li><li>とじる（写真は消えます）</li><li>10.18 のお題</li><li>窓のそとの色</li><li>次のお題は、きょうのどこかで届きます</li><li>ならび</li><li>ミナト・ソラほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ミ</li><li>ミナト</li><li>ソ</li><li>ソラ</li><li>ハ</li><li>ハル</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>写真を保存する <span>125×44</span></li><li>とじる（写真は消えます） <span>188×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-prevbefore-feed">
+    <h2><span>20</span> きょう（お題が届く前・前のお題を撮る前・流す）</h2>
+    <p class="meta">/home　／　見本: prevbefore</p>
+    <div class="imgs">
+      <figure><img src="20-today-prevbefore-feed-light.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮る前・流す）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="20-today-prevbefore-feed-dark.png" width="390" loading="lazy" alt="きょう（お題が届く前・前のお題を撮る前・流す）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>10.18 のお題</li><li>窓のそとの色</li><li>次のお題は、きょうのどこかで届きます</li><li>ならび</li><li>ミナト・ソラほかが撮りました</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>ミ</li><li>ミナト</li><li>ソ</li><li>ソラ</li><li>ハ</li><li>ハル</li><li>ここまで</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>358×200</span></li><li>ミナト <span>390×488</span></li><li>ソラ <span>390×488</span></li><li>ハル <span>390×488</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-nobody">
+    <h2><span>21</span> きょう（誰も撮っていない）</h2>
+    <p class="meta">/home　／　見本: nobody</p>
+    <div class="imgs">
+      <figure><img src="21-today-nobody-light.png" width="390" loading="lazy" alt="きょう（誰も撮っていない）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="21-today-nobody-dark.png" width="390" loading="lazy" alt="きょう（誰も撮っていない）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>まだ誰も撮っていません</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>185×232</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-zero">
+    <h2><span>22</span> きょう（友達0人）</h2>
+    <p class="meta">/home　／　見本: zero</p>
+    <div class="imgs">
+      <figure><img src="22-today-zero-light.png" width="390" loading="lazy" alt="きょう（友達0人）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="22-today-zero-dark.png" width="390" loading="lazy" alt="きょう（友達0人）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>あ</li><li>あおい</li><li>ゆ</li><li>ゆうと</li><li>な</li><li>なな</li><li>こ</li><li>こはく</li><li>見本</li><li>友達を呼ぶと、</li><li>こんなふうに並びます。</li><li>友達を呼ぶ</li><li>↗</li><li>QRコード</li><li>IDで探す</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>友達を呼ぶ ↗ <span>358×60</span></li><li>QRコード <span>57×44</span></li><li>IDで探す <span>51×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-zero-feed">
+    <h2><span>23</span> きょう（友達0人・流す）</h2>
+    <p class="meta">/home　／　見本: zero</p>
+    <div class="imgs">
+      <figure><img src="23-today-zero-feed-light.png" width="390" loading="lazy" alt="きょう（友達0人・流す）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="23-today-zero-feed-dark.png" width="390" loading="lazy" alt="きょう（友達0人・流す）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>撮る</li><li>撮ると、みんなのが見られます。</li><li>友達を呼ぶと、友達の写真がここに流れてきます。</li><li>友達を呼ぶ</li><li>↗</li><li>QRコード</li><li>IDで探す</li><li>きょう</li><li>さがす</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>撮る 撮ると、みんなのが見られます。 <span>358×200</span></li><li>友達を呼ぶ ↗ <span>358×60</span></li><li>QRコード <span>57×44</span></li><li>IDで探す <span>51×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="today-zero-posted">
+    <h2><span>24</span> きょう（友達0人・撮った後）</h2>
+    <p class="meta">/home　／　見本: zeroposted</p>
+    <div class="imgs">
+      <figure><img src="24-today-zero-posted-light.png" width="390" loading="lazy" alt="きょう（友達0人・撮った後）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="24-today-zero-posted-dark.png" width="390" loading="lazy" alt="きょう（友達0人・撮った後）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>おだい</li><li>並べる</li><li>流す</li><li>きょうのお題</li><li>10.19 月</li><li>ふと目に入った、丸いもの</li><li>きょうのならび</li><li>今日はもう出しました</li><li>ユ</li><li>ユイ</li><li>友達を呼ぶ</li><li>↗</li><li>QRコード</li><li>IDで探す</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>お知らせ <span>44×44</span></li><li>フォローリクエスト <span>44×44</span></li><li>並べる <span>58×44</span></li><li>流す <span>56×44</span></li><li>ユイ <span>185×232</span></li><li>友達を呼ぶ ↗ <span>358×60</span></li><li>QRコード <span>57×44</span></li><li>IDで探す <span>51×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="viewer">
+    <h2><span>25</span> 大きく見る（友達の写真・ハート・絵文字・コメント）</h2>
+    <p class="meta">/viewer?userId=sample-haru&amp;date=2026-10-19　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="25-viewer-light.png" width="390" loading="lazy" alt="大きく見る（友達の写真・ハート・絵文字・コメント）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="25-viewer-dark.png" width="390" loading="lazy" alt="大きく見る（友達の写真・ハート・絵文字・コメント）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>ハ</li><li>ハル</li><li>ふと目に入った、丸いもの</li><li>♥︎</li><li>😂</li><li>😮</li><li>🔥</li><li>🥹</li><li>👏</li><li>反応した人</li><li>ユ</li><li>ミ</li><li>ナ</li><li>ミナト  この丸、ちょうどいい</li><li>14分前 · 長押しで通報</li><li>ユイ  ほんとだ、影もきれい</li><li>9分前 · 長押しで削除</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>(名前なし) <span>390×388</span></li><li>写真を入れかえる <span>96×128</span></li><li>ハート <span>44×44</span></li><li>😂 <span>44×44</span></li><li>😮 <span>44×44</span></li><li>🔥 <span>44×44</span></li><li>🥹 <span>44×44</span></li><li>👏 <span>44×44</span></li><li>反応した人 ユ ♥︎ ミ 😂 ナ 🔥 ミ ミナト この丸、ちょうどいい 14分前 · 長押しで通報 ユ ユイ ほんとだ、影もきれい 9分前 · 長押しで削除 <span>390×280</span></li><li>ミ ミナト この丸、ちょうどいい 14分前 · 長押しで通報 <span>390×53</span></li><li>ユ ユイ ほんとだ、影もきれい 9分前 · 長押しで削除 <span>390×53</span></li><li>コメントを書く… <span>322×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="viewer-burst">
+    <h2><span>26</span> 大きく見る（ハートを押した直後・舞い上がる）</h2>
+    <p class="meta">/viewer?userId=sample-haru&amp;date=2026-10-19　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="26-viewer-burst-light.png" width="390" loading="lazy" alt="大きく見る（ハートを押した直後・舞い上がる）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="26-viewer-burst-dark.png" width="390" loading="lazy" alt="大きく見る（ハートを押した直後・舞い上がる）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>ハ</li><li>ハル</li><li>ふと目に入った、丸いもの</li><li>♥︎</li><li>😂</li><li>😮</li><li>🔥</li><li>🥹</li><li>👏</li><li>反応した人</li><li>ユ</li><li>ミ</li><li>ナ</li><li>ミナト  この丸、ちょうどいい</li><li>14分前 · 長押しで通報</li><li>ユイ  ほんとだ、影もきれい</li><li>9分前 · 長押しで削除</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>(名前なし) <span>390×388</span></li><li>写真を入れかえる <span>96×128</span></li><li>ハート <span>44×44</span></li><li>😂 <span>44×44</span></li><li>😮 <span>44×44</span></li><li>🔥 <span>44×44</span></li><li>🥹 <span>44×44</span></li><li>👏 <span>44×44</span></li><li>反応した人 ユ ♥︎ ミ 😂 ナ 🔥 ミ ミナト この丸、ちょうどいい 14分前 · 長押しで通報 ユ ユイ ほんとだ、影もきれい 9分前 · 長押しで削除 <span>390×280</span></li><li>ミ ミナト この丸、ちょうどいい 14分前 · 長押しで通報 <span>390×53</span></li><li>ユ ユイ ほんとだ、影もきれい 9分前 · 長押しで削除 <span>390×53</span></li><li>コメントを書く… <span>322×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="viewer-own">
+    <h2><span>27</span> 大きく見る（自分の写真・押した人の一覧）</h2>
+    <p class="meta">/viewer?userId=sample-me&amp;date=2026-10-19　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="27-viewer-own-light.png" width="390" loading="lazy" alt="大きく見る（自分の写真・押した人の一覧）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="27-viewer-own-dark.png" width="390" loading="lazy" alt="大きく見る（自分の写真・押した人の一覧）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>ユ</li><li>ユイ</li><li>ふと目に入った、丸いもの</li><li>反応した人</li><li>ハ</li><li>😂</li><li>ミ</li><li>♥︎</li><li>ナ</li><li>😮</li><li>まだコメントはありません</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>(名前なし) <span>390×388</span></li><li>写真を入れかえる <span>96×128</span></li><li>反応した人 ハ 😂 ミ ♥︎ ナ 😮 まだコメントはありません <span>390×336</span></li><li>コメントを書く… <span>322×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="search">
+    <h2><span>28</span> さがす</h2>
+    <p class="meta">/suggest　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="28-search-light.png" width="390" loading="lazy" alt="さがす（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="28-search-dark.png" width="390" loading="lazy" alt="さがす（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>さがす</li><li>友達を呼ぶ</li><li>このリンクから入った人とは、すぐ友達になれます。</li><li>↗</li><li>知り合いかも</li><li>カ</li><li>カイ</li><li>@kai</li><li>フォローする</li><li>レ</li><li>レン</li><li>@ren</li><li>ミ</li><li>ミオ</li><li>@mio</li><li>リ</li><li>リン</li><li>@rin</li><li>きょう</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>友達を呼ぶ このリンクから入った人とは、すぐ友達になれます。 ↗ <span>358×78</span></li><li>@ID で探す <span>300×44</span></li><li>カ カイ @kai <span>232×44</span></li><li>フォローする <span>110×44</span></li><li>レ レン @ren <span>232×44</span></li><li>フォローする <span>110×44</span></li><li>ミ ミオ @mio <span>232×44</span></li><li>フォローする <span>110×44</span></li><li>リ リン @rin <span>232×44</span></li><li>フォローする <span>110×44</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="me">
+    <h2><span>29</span> わたし</h2>
+    <p class="meta">/me　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="29-me-light.png" width="390" loading="lazy" alt="わたし（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="29-me-dark.png" width="390" loading="lazy" alt="わたし（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@yui</li><li>ユ</li><li>ユイ</li><li>放課後は、だいたい散歩しています。</li><li>フォロワー</li><li>フォロー中</li><li>プロフィールを編集</li><li>プロフィールを共有</li><li>友達を呼ぶ</li><li>3日 続けて撮っています</li><li>9マス</li><li>好きな食べ物</li><li>からあげ</li><li>よく行く場所</li><li>図書館</li><li>最近のこと</li><li>自転車をなおした</li><li>好きな音</li><li>雨</li><li>朝のおとも</li><li>ココア</li><li>集めているもの</li><li>ボタン</li><li>投稿</li><li>カレンダー</li><li>10.19</li><li>ふと目に入った、丸いもの</li><li>10.17</li><li>10.16</li><li>10.14</li><li>10.13</li><li>10.10</li><li>10.07</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>設定 <span>44×44</span></li><li>フォロワー <span>65×44</span></li><li>フォロー中 <span>65×44</span></li><li>プロフィールを編集 <span>175×44</span></li><li>プロフィールを共有 <span>175×44</span></li><li>友達を呼ぶ <span>358×44</span></li><li>投稿 <span>195×44</span></li><li>カレンダー <span>195×44</span></li><li>10.19 ふと目に入った、丸いもの <span>128×168</span></li><li>10.17 <span>128×168</span></li><li>10.16 <span>128×168</span></li><li>10.14 <span>128×168</span></li><li>10.13 <span>128×168</span></li><li>10.10 <span>128×168</span></li><li>10.07 <span>128×168</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="me-calendar">
+    <h2><span>30</span> わたし（カレンダー）</h2>
+    <p class="meta">/me　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="30-me-calendar-light.png" width="390" loading="lazy" alt="わたし（カレンダー）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="30-me-calendar-dark.png" width="390" loading="lazy" alt="わたし（カレンダー）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@yui</li><li>ユ</li><li>ユイ</li><li>放課後は、だいたい散歩しています。</li><li>フォロワー</li><li>フォロー中</li><li>プロフィールを編集</li><li>プロフィールを共有</li><li>友達を呼ぶ</li><li>3日 続けて撮っています</li><li>9マス</li><li>好きな食べ物</li><li>からあげ</li><li>よく行く場所</li><li>図書館</li><li>最近のこと</li><li>自転車をなおした</li><li>好きな音</li><li>雨</li><li>朝のおとも</li><li>ココア</li><li>集めているもの</li><li>ボタン</li><li>投稿</li><li>カレンダー</li><li>2026年10月</li><li>‹</li><li>›</li><li>日</li><li>月</li><li>火</li><li>水</li><li>木</li><li>金</li><li>土</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>撮った日は、小さな写真で埋まります。</li><li>きょう</li><li>さがす</li><li>撮る</li><li>わたし</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>設定 <span>44×44</span></li><li>フォロワー <span>65×44</span></li><li>フォロー中 <span>65×44</span></li><li>プロフィールを編集 <span>175×44</span></li><li>プロフィールを共有 <span>175×44</span></li><li>友達を呼ぶ <span>358×44</span></li><li>投稿 <span>195×44</span></li><li>カレンダー <span>195×44</span></li><li>前の月 <span>44×44</span></li><li>次の月 <span>44×44</span></li><li>7 <span>47×60</span></li><li>10 <span>47×60</span></li><li>13 <span>47×60</span></li><li>14 <span>47×60</span></li><li>16 <span>47×60</span></li><li>17 <span>47×60</span></li><li>19 <span>47×60</span></li><li>きょう <span>98×51</span></li><li>さがす <span>98×51</span></li><li>撮る <span>98×51</span></li><li>わたし <span>98×51</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="edit-profile">
+    <h2><span>31</span> プロフィールを編集</h2>
+    <p class="meta">/edit-profile　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="31-edit-profile-light.png" width="390" loading="lazy" alt="プロフィールを編集（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="31-edit-profile-dark.png" width="390" loading="lazy" alt="プロフィールを編集（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>プロフィールを編集</li><li>ユ</li><li>写真を変える</li><li>名前</li><li>ひとこと</li><li>80文字まで</li><li>9マス</li><li>好きなものや、よく行く場所を書けます。空のマスは見えません。</li><li>＋</li><li>保存する</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>写真を変える <span>358×140</span></li><li>名前 <span>358×44</span></li><li>ひとこと <span>358×88</span></li><li>9マス 1 の写真 <span>44×44</span></li><li>9マス 1 <span>126×44</span></li><li>9マス 1 <span>180×44</span></li><li>9マス 2 の写真 <span>44×44</span></li><li>9マス 2 <span>126×44</span></li><li>9マス 2 <span>180×44</span></li><li>9マス 3 の写真 <span>44×44</span></li><li>9マス 3 <span>126×44</span></li><li>9マス 3 <span>180×44</span></li><li>9マス 4 の写真 <span>44×44</span></li><li>9マス 4 <span>126×44</span></li><li>9マス 4 <span>180×44</span></li><li>9マス 5 の写真 <span>44×44</span></li><li>9マス 5 <span>126×44</span></li><li>9マス 5 <span>180×44</span></li><li>9マス 6 の写真 <span>44×44</span></li><li>9マス 6 <span>126×44</span></li><li>9マス 6 <span>180×44</span></li><li>9マス 7 の写真 <span>44×44</span></li><li>9マス 7 <span>126×44</span></li><li>9マス 7 <span>180×44</span></li><li>9マス 8 の写真 <span>44×44</span></li><li>9マス 8 <span>126×44</span></li><li>9マス 8 <span>180×44</span></li><li>9マス 9 の写真 <span>44×44</span></li><li>9マス 9 <span>126×44</span></li><li>9マス 9 <span>180×44</span></li><li>保存する <span>358×52</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="share">
+    <h2><span>32</span> プロフィールを共有</h2>
+    <p class="meta">/share　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="32-share-light.png" width="390" loading="lazy" alt="プロフィールを共有（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="32-share-dark.png" width="390" loading="lazy" alt="プロフィールを共有（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>プロフィールを共有</li><li>ユ</li><li>ユイ</li><li>@yui</li><li>このリンクから入った人とは、すぐ友達になれます。</li><li>リンクをコピー</li><li>LINE</li><li>ほかの方法</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>リンクをコピー <span>109×72</span></li><li>LINE <span>109×72</span></li><li>ほかの方法 <span>109×72</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="profile-locked">
+    <h2><span>33</span> 友達のプロフィール（鍵あり・未フォロー）</h2>
+    <p class="meta">/profile/ren　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="33-profile-locked-light.png" width="390" loading="lazy" alt="友達のプロフィール（鍵あり・未フォロー）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="33-profile-locked-dark.png" width="390" loading="lazy" alt="友達のプロフィール（鍵あり・未フォロー）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@ren</li><li>レ</li><li>レン</li><li>フォローする</li><li>このアカウントは非公開です</li><li>フォローが承認されると、投稿と9マスが見られます。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>フォローする <span>358×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="profile-following">
+    <h2><span>34</span> 友達のプロフィール（フォロー中）</h2>
+    <p class="meta">/profile/haru　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="34-profile-following-light.png" width="390" loading="lazy" alt="友達のプロフィール（フォロー中）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="34-profile-following-dark.png" width="390" loading="lazy" alt="友達のプロフィール（フォロー中）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@haru</li><li>ハ</li><li>ハル</li><li>誕生日 3月14日</li><li>写真は下手だけど、毎日撮ってます。</li><li>フォロワー</li><li>フォロー中</li><li>フォロー中 ✓</li><li>ピン留め</li><li>ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。</li><li>9マス</li><li>好きな食べ物</li><li>からあげ</li><li>よく行く場所</li><li>図書館</li><li>最近のこと</li><li>自転車をなおした</li><li>好きな音</li><li>雨</li><li>朝のおとも</li><li>ココア</li><li>集めているもの</li><li>ボタン</li><li>投稿</li><li>カレンダー</li><li>10.19</li><li>10.17</li><li>10.16</li><li>10.14</li><li>10.13</li><li>10.10</li><li>10.07</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>フォロワー <span>65×44</span></li><li>フォロー中 <span>65×44</span></li><li>フォロー中 ✓ <span>175×44</span></li><li>ピン留め <span>175×44</span></li><li>投稿 <span>195×44</span></li><li>カレンダー <span>195×44</span></li><li>10.19 <span>128×168</span></li><li>10.17 <span>128×168</span></li><li>10.16 <span>128×168</span></li><li>10.14 <span>128×168</span></li><li>10.13 <span>128×168</span></li><li>10.10 <span>128×168</span></li><li>10.07 <span>128×168</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="profile-pinned">
+    <h2><span>35</span> 友達のプロフィール（ピン留め中）</h2>
+    <p class="meta">/profile/haru　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="35-profile-pinned-light.png" width="390" loading="lazy" alt="友達のプロフィール（ピン留め中）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="35-profile-pinned-dark.png" width="390" loading="lazy" alt="友達のプロフィール（ピン留め中）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@haru</li><li>ハ</li><li>ハル</li><li>誕生日 3月14日</li><li>写真は下手だけど、毎日撮ってます。</li><li>フォロワー</li><li>フォロー中</li><li>フォロー中 ✓</li><li>ピン留めを外す</li><li>ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。</li><li>9マス</li><li>好きな食べ物</li><li>からあげ</li><li>よく行く場所</li><li>図書館</li><li>最近のこと</li><li>自転車をなおした</li><li>好きな音</li><li>雨</li><li>朝のおとも</li><li>ココア</li><li>集めているもの</li><li>ボタン</li><li>投稿</li><li>カレンダー</li><li>10.19</li><li>10.17</li><li>10.16</li><li>10.14</li><li>10.13</li><li>10.10</li><li>10.07</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>フォロワー <span>65×44</span></li><li>フォロー中 <span>65×44</span></li><li>フォロー中 ✓ <span>175×44</span></li><li>ピン留めを外す <span>175×44</span></li><li>投稿 <span>195×44</span></li><li>カレンダー <span>195×44</span></li><li>10.19 <span>128×168</span></li><li>10.17 <span>128×168</span></li><li>10.16 <span>128×168</span></li><li>10.14 <span>128×168</span></li><li>10.13 <span>128×168</span></li><li>10.10 <span>128×168</span></li><li>10.07 <span>128×168</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="profile-calendar">
+    <h2><span>36</span> 友達のプロフィール（カレンダー）</h2>
+    <p class="meta">/profile/haru　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="36-profile-calendar-light.png" width="390" loading="lazy" alt="友達のプロフィール（カレンダー）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="36-profile-calendar-dark.png" width="390" loading="lazy" alt="友達のプロフィール（カレンダー）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>@haru</li><li>ハ</li><li>ハル</li><li>誕生日 3月14日</li><li>写真は下手だけど、毎日撮ってます。</li><li>フォロワー</li><li>フォロー中</li><li>フォロー中 ✓</li><li>ピン留め</li><li>ホームで、見ていない写真のあとに先に並びます（5人まで）。相手には知られません。</li><li>9マス</li><li>好きな食べ物</li><li>からあげ</li><li>よく行く場所</li><li>図書館</li><li>最近のこと</li><li>自転車をなおした</li><li>好きな音</li><li>雨</li><li>朝のおとも</li><li>ココア</li><li>集めているもの</li><li>ボタン</li><li>投稿</li><li>カレンダー</li><li>2026年10月</li><li>‹</li><li>›</li><li>日</li><li>月</li><li>火</li><li>水</li><li>木</li><li>金</li><li>土</li><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>撮った日は、小さな写真で埋まります。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>フォロワー <span>65×44</span></li><li>フォロー中 <span>65×44</span></li><li>フォロー中 ✓ <span>175×44</span></li><li>ピン留め <span>175×44</span></li><li>投稿 <span>195×44</span></li><li>カレンダー <span>195×44</span></li><li>前の月 <span>44×44</span></li><li>次の月 <span>44×44</span></li><li>7 <span>47×60</span></li><li>10 <span>47×60</span></li><li>13 <span>47×60</span></li><li>14 <span>47×60</span></li><li>16 <span>47×60</span></li><li>17 <span>47×60</span></li><li>19 <span>47×60</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="following">
+    <h2><span>37</span> フォロー中の一覧</h2>
+    <p class="meta">/people?kind=following　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="37-following-light.png" width="390" loading="lazy" alt="フォロー中の一覧（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="37-following-dark.png" width="390" loading="lazy" alt="フォロー中の一覧（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>フォロー中</li><li>ハ</li><li>ハル</li><li>@haru</li><li>ミ</li><li>ミナト</li><li>@minato</li><li>ソ</li><li>ソラ</li><li>@sora</li><li>ナ</li><li>ナツキ</li><li>@natsuki</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>ハ ハル @haru <span>390×76</span></li><li>ミ ミナト @minato <span>390×76</span></li><li>ソ ソラ @sora <span>390×76</span></li><li>ナ ナツキ @natsuki <span>390×76</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="requests">
+    <h2><span>38</span> 承認待ち</h2>
+    <p class="meta">/requests　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="38-requests-light.png" width="390" loading="lazy" alt="承認待ち（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="38-requests-dark.png" width="390" loading="lazy" alt="承認待ち（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>フォローリクエスト</li><li>ト</li><li>トモ</li><li>@tomo</li><li>承認</li><li>削除</li><li>削除しても、相手には知らされません。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>承認 <span>58×44</span></li><li>削除 <span>44×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="settings">
+    <h2><span>39</span> 設定</h2>
+    <p class="meta">/settings　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="39-settings-light.png" width="390" loading="lazy" alt="設定（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="39-settings-dark.png" width="390" loading="lazy" alt="設定（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>設定</li><li>アカウント</li><li>鍵をかける</li><li>承認した人だけ、あなたを見られます。</li><li>リマインド</li><li>お題が届いて3時間たっても撮っていないとき、1回だけ知らせます。夜10時すぎは送りません。</li><li>利用規約</li><li>→</li><li>プライバシー</li><li>ログアウト</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li><li>鍵をかける <span>64×44</span></li><li>リマインド <span>64×44</span></li><li>利用規約 → <span>358×54</span></li><li>プライバシー → <span>358×54</span></li><li>ログアウト <span>358×52</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="invite">
+    <h2><span>40</span> 友達を呼ぶ</h2>
+    <p class="meta">/setup/invite　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="40-invite-light.png" width="390" loading="lazy" alt="友達を呼ぶ（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="40-invite-dark.png" width="390" loading="lazy" alt="友達を呼ぶ（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>友達を、3人。</li><li>3人そろうと、みんなの写真を並べて見られます。</li><li>このリンクから入った人とは、すぐ友達になれます。</li><li>LINEで送る</li><li>ほかの方法で送る</li><li>戻る</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>LINEで送る <span>342×64</span></li><li>ほかの方法で送る <span>342×56</span></li><li>戻る <span>390×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="legal-terms">
+    <h2><span>41</span> 利用規約（仮）</h2>
+    <p class="meta">/legal?kind=terms　／　見本: social</p>
+    <div class="imgs">
+      <figure><img src="41-legal-terms-light.png" width="390" loading="lazy" alt="利用規約（仮）（明るい）"><figcaption>明るい</figcaption></figure>
+      <figure><img src="41-legal-terms-dark.png" width="390" loading="lazy" alt="利用規約（仮）（暗い）"><figcaption>暗い</figcaption></figure></div>
+    <details>
+      <summary>出ている文字とボタン（明るい表示）</summary>
+      <div class="lists">
+        <div><h3>文字</h3><ul><li>利用規約</li><li>これは仮のページです。正式な文面は、公開までに差し替えます。</li><li>13歳以上の方が使えます。</li><li>退会・削除のご連絡</li><li>やめたいとき、写真や情報を消したいときは、このアプリを渡してくれた運営者に直接伝えてください。連絡先は、正式に公開するまでにここへ書きます。</li></ul></div>
+        <div><h3>押せるところ（幅×高さ px）</h3><ul><li>← 戻る <span>44×44</span></li></ul></div>
+      </div>
+    </details>
+  </section>
+</body>
+</html>
