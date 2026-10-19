@@ -34,6 +34,7 @@
       height: 48px; border: 1px solid var(--rule); color: var(--ink);
       font-size: 14px; letter-spacing: 0.04em; text-decoration: none; margin-bottom: 8px;
     }
+    .note { font-size: 12px; line-height: 1.8; color: var(--ink-sub); margin-top: 16px; }
     hr { border: none; border-top: 1px solid var(--rule); margin: 24px 0; }
   </style>
 </head>
@@ -57,18 +58,30 @@
     ここを押してアプリで開く →
   </a>
 
+  <p class="note">押しても開かないときは、Safari（Android は Chrome）でこのページを開き直してください。</p>
+
   <script>
     (function () {
-      // ディープリンクの飛び先はここだけで管理する
-      // 本番アプリに切り替えるときは、この1行を 'odai:/' に変える
-      var DEEP_LINK_BASE = 'exp://z_dw2tk-ryu1025-8082.exp.direct/--';
+      // 公開版（EAS Update）を Expo Go で開く住所。ここだけで管理する
+      // 本番アプリに切り替えるときは、この1行を 'odai://' 形式に変える
+      var DEEP_LINK_BASE = 'exp://u.expo.dev/38277f9f-65f9-4165-9733-3379a655ad31?runtime-version=exposdk%3A57.0.0&channel-name=preview';
 
       var params = new URLSearchParams(location.search);
+
+      // LINE のアプリ内ブラウザは exp:// を開けない（「アドレスが無効です」になる）。
+      // LINE が外のブラウザで開き直す合図を付けて、このページを読み込み直す
+      if (/Line\//i.test(navigator.userAgent) && !params.has('openExternalBrowser')) {
+        var next = new URL(location.href);
+        next.searchParams.set('openExternalBrowser', '1');
+        location.replace(next.toString());
+        return;
+      }
+
       // コードは英数字のみ受け付ける（外部からの任意文字列を拒否）
       var raw = params.get('code') || '';
       var code = raw.replace(/[^A-Za-z0-9]/g, '');
 
-      var deepLink = DEEP_LINK_BASE + '/?code=' + code;
+      var deepLink = DEEP_LINK_BASE + (code ? '&code=' + code : '');
       document.getElementById('open-btn').href = deepLink;
     })();
   </script>
